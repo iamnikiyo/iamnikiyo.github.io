@@ -1,0 +1,127 @@
+/* Own Styles for personal Portfolio */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+body{
+	font-family: 'Lato', sans-serif;
+	color:white;
+}
+
+#header{
+	background: black;
+	position: relative;
+}
+
+#bimage{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .6;
+    background: url(../images/header.jpg) ;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+	filter: blur(3px);
+}
+.header-title-wrapper{
+	top:30%;
+	position: relative;
+}
+
+#header #header-title{
+	font-size:13em;
+	font-weight: 900;
+	text-transform: uppercase;
+    z-index: 2;
+    margin:0;
+    position:relative;
+    text-align: center;
+    color:#e4e409;
+
+}
+.header-subtitle-wrapper{
+	position: relative;
+	top:35%;
+}
+#header #header-subtitle{
+	text-align: center;
+	font-size: 3em;
+}
+.header-btn-wrapper{
+	position: relative;
+	top:45%;
+}
+
+#header button{
+	z-index: 5;
+	position: relative;
+	padding:.8em;
+	font-size:1.5em;
+}
+/* Transparent Button */
+.btn-primary-outline {
+  background-color: transparent;
+  border-color: #e4e409;
+  color:white;
+}
+
+#header button:hover{
+	color:#e4e409;
+}
+
+
+
+/** animate.css by Daniel Eden. https://github.com/daneden/animate.css **/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+/** END ANIMATION **/

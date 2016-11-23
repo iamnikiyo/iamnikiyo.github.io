@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Portfolio</title>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type="text/javascript">
+			$(document).ready(function() {
+			var movementStrength = 25;
+			var height = movementStrength / $(window).height();
+			var width = movementStrength / $(window).width();
+			$("#header").mousemove(function(e){
+			          var pageX = e.pageX - ($(window).width() / 2);
+			          var pageY = e.pageY - ($(window).height() / 2);
+			          var newvalueX = width * pageX * -1 - 25;
+			          var newvalueY = height * pageY * -1 - 50;
+			          $('#bimage').css("background-position", newvalueX+"px     "+newvalueY+"px");
+			});
+			
+
+			$('#header').css("height",$(window).height() + "px");
+			});
+
+			function goDown(){
+				$(window).scrollBottom($("#header").height);
+			}
+		</script>
+	</head>
+	<body>
+		<header id="header" class="col-md-12">
+			<div class="row header-title-wrapper">
+				<h1 id="header-title" class="col-md-12 animated pulse">Portfolio</h1>
+			</div>
+			<div class="row header-subtitle-wrapper">
+				<h3 id="header-subtitle" class="col-md-12">Nicolás Escobar</h3>
+			</div>
+			<div id="bimage"></div>
+			<div class="row header-btn-wrapper">
+				<button type="button" onclick="goDown()" class="col-md-2 col-md-offset-5 btn btn-primary-outline">Enter</button>
+			</div>
+		</header>
+	</body>
+</html>
