@@ -10,6 +10,7 @@ body{
 #header{
 	background: black;
 	position: relative;
+  overflow: auto;
 }
 
 #bimage{
@@ -59,7 +60,7 @@ body{
 	top:45%;
 }
 
-#header button{
+#header a{
 	z-index: 5;
 	position: relative;
 	padding:.8em;
@@ -72,10 +73,13 @@ body{
   color:white;
 }
 
-#header button:hover{
+#header a:hover{
 	color:#e4e409;
 }
 
+#header a:visited{
+  color:white;
+}
 
 
 /** animate.css by Daniel Eden. https://github.com/daneden/animate.css **/
@@ -125,3 +129,41 @@ body{
   animation-name: pulse;
 }
 /** END ANIMATION **/
+/* Main styles */
+
+#main{
+  background:white;
+  position: relative;
+}
+
+aside{
+  width:20%;
+  background:black;
+  overflow: auto;
+  color:white;
+  position: absolute;
+  top:0;
+  height: 100%;
+  z-index: 20;
+
+}
+.img-wrapper img{
+  width: 67px;
+  padding: .5em;
+  box-sizing: border-box;
+  border: 1px solid #E4E409;
+}
+
+.menu-title{
+  position: relative;
+  top:2em;
+}
+.menu .menu-text{
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1366px){
+
+
+}

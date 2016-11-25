@@ -7,27 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<script type="text/javascript">
-			$(document).ready(function() {
-			var movementStrength = 25;
-			var height = movementStrength / $(window).height();
-			var width = movementStrength / $(window).width();
-			$("#header").mousemove(function(e){
-			          var pageX = e.pageX - ($(window).width() / 2);
-			          var pageY = e.pageY - ($(window).height() / 2);
-			          var newvalueX = width * pageX * -1 - 25;
-			          var newvalueY = height * pageY * -1 - 50;
-			          $('#bimage').css("background-position", newvalueX+"px     "+newvalueY+"px");
-			});
-			
-
-			$('#header').css("height",$(window).height() + "px");
-			});
-
-			function goDown(){
-				$(window).scrollBottom($("#header").height);
-			}
-		</script>
+		<script src="js/personal.js"></script>
 	</head>
 	<body>
 		<header id="header" class="col-md-12">
@@ -39,8 +19,28 @@
 			</div>
 			<div id="bimage"></div>
 			<div class="row header-btn-wrapper">
-				<button type="button" onclick="goDown()" class="col-md-2 col-md-offset-5 btn btn-primary-outline">Enter</button>
+				<a href="#main" id="goDown" class="col-md-2 col-md-offset-5 btn btn-primary-outline">Enter</a>
+				
 			</div>
 		</header>
+		<aside class="menu">
+			<div class="menu-title row">
+				<div class="img-wrapper col-md-offset-1 col-md-2">
+					<img src="images/menu-icon.png">
+				</div>
+				<div class="menu-text col-md-7 col-md-offset-2">Menu</div>
+			</div>
+			<nav class="nav" id="#navbar">
+				<ul class="nav nav-pills nav-stacked">
+					<li><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2</a></li>
+					<li><a href="#">Item 3</a></li>
+					<li><a href="#">Item 4</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<main id="main">
+			
+		</main>
 	</body>
 </html>
