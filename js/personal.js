@@ -29,3 +29,15 @@
 
 
 });
+/* Show or Hide menu */
+function toggleMenuInterno(){
+    $(".menu").toggle("fast").complete(
+        $("#externo").toggle()
+    );
+}
+/* Externo */
+function toggleMenuExterno(){
+    $(".menu").toggle("fast").complete(
+        $("#externo").toggle()
+    );
+}

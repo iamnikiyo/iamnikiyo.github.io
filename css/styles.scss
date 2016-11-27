@@ -86,39 +86,61 @@ body{
 }
 /* Lateral NavBar */
 aside{
-  display:none;
+  display: none;
   width:20%;
   background:black;
-  overflow: auto;
+  overflow:auto;
   color:white;
   position: absolute;
   top:0;
-  height: 100%;
+  height:100%;
   z-index: 20;
 
-  .img-wrapper img{
-    width: 67px;
-    padding: .5em;
-    box-sizing: border-box;
-    border: 1px solid $mainColor;
-  }
   .menu-title{
     position: relative;
     top:2em;
+    height:7em;
+    line-height:7em;
+    width:100%;
+    &:after{
+      content: '';
+      width: 95%;
+      box-sizing: border-box;
+      height: 2px;
+      background: $mainColor;
+      position: absolute;
+      bottom: 0;
+      left: 7%;
+    }
   }
-  .menu .menu-text{
+  .menu-text{
     font-size: 3em;
     text-transform: uppercase;
   }
-}// END LATERAL NAVBAR
 
-
-@media (max-width: 1280px){
-  .img-wrapper img{
-    width:50px;
+  #navbar{
+    position: relative;
+    top:5em;
   }
+}// END LATERAL NAVBAR
+#externo{
+  position:fixed;
+  top:2em;
+  z-index: 20;
+  margin-left:1em;
+}
+.img-wrapper img{
+  width: 67px;
+  padding: .5em;
+  box-sizing: border-box;
+  border: 1px solid $mainColor;
 }
 
+@media (max-width: 1366px) {
+  .img-wrapper img {
+    width: 50px;
+  }
+}
 /** animate.css by Daniel Eden. https://github.com/daneden/animate.css **/
 .animated {
   -webkit-animation-duration: 1s;

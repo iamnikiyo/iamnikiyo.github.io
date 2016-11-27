@@ -81,19 +81,41 @@ aside {
   top: 0;
   height: 100%;
   z-index: 20; }
-  aside .img-wrapper img {
-    width: 67px;
-    padding: .5em;
-    box-sizing: border-box;
-    border: 1px solid #e4e409; }
   aside .menu-title {
     position: relative;
-    top: 2em; }
-  aside .menu .menu-text {
+    top: 2em;
+    height: 7em;
+    line-height: 7em;
+    width: 100%; }
+    aside .menu-title:after {
+      content: '';
+      width: 95%;
+      box-sizing: border-box;
+      height: 2px;
+      background: #e4e409;
+      position: absolute;
+      bottom: 0;
+      left: 7%; }
+  aside .menu-text {
     font-size: 3em;
     text-transform: uppercase; }
+  aside #navbar {
+    position: relative;
+    top: 5em; }
 
-@media (max-width: 1280px) {
+#externo {
+  position: fixed;
+  top: 2em;
+  z-index: 20;
+  margin-left: 1em; }
+
+.img-wrapper img {
+  width: 67px;
+  padding: .5em;
+  box-sizing: border-box;
+  border: 1px solid #e4e409; }
+
+@media (max-width: 1366px) {
   .img-wrapper img {
     width: 50px; } }
 /** animate.css by Daniel Eden. https://github.com/daneden/animate.css **/

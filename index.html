@@ -2,7 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Portfolio</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>Portfolio</title>
 		<script src="js/jquery-3.1.1.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
@@ -26,11 +27,11 @@
 		<aside class="menu">
 			<div class="menu-title row">
 				<div class="img-wrapper col-md-offset-1 col-md-2">
-					<img src="images/menu-icon.png">
+					<img onclick="toggleMenuInterno()" src="images/menu-icon.png">
 				</div>
-				<div class="menu-text col-md-7 col-md-offset-2">Menu</div>
+				<div class="menu-text col-md-7 col-md-offset-1">Menu</div>
 			</div>
-			<nav class="nav" id="#navbar">
+			<nav class="nav" id="navbar">
 				<ul class="nav nav-pills nav-stacked">
 					<li><a href="#">Item 1</a></li>
 					<li><a href="#">Item 2</a></li>
@@ -39,6 +40,9 @@
 				</ul>
 			</nav>
 		</aside>
+        <div id="externo" class="img-wrapper col-md-offset-1 col-md-2">
+            <img onclick="toggleMenuExterno()" src="images/menu-icon.png">
+        </div>
 		<main id="main">
 			<h1>Im main</h1>
 		</main>
