@@ -45,6 +45,7 @@ function toggleMenuExterno(){
 function onScroll(event){
     if($(document).scrollTop()>$(window).height()-80){
         $("#externo").addClass("active");
+
     }else{
         $("#externo").removeClass("active");
     }

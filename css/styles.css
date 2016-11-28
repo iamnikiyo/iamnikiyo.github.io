@@ -5,8 +5,7 @@ body {
   color: white;
   position: absolute;
   top: 0;
-  width: 100%;
-  overflow: hidden; }
+  width: 100%; }
 
 #header {
   background: black;
@@ -69,7 +68,16 @@ body {
 /* Main styles */
 #main {
   background: white;
-  position: relative; }
+  position: relative;
+  color: black;
+  text-align: center; }
+
+main h1 {
+  font-size: 5em;
+  position: absolute;
+  top: 30%;
+  margin: 0;
+  width: 100%; }
 
 /* Lateral NavBar */
 aside {
@@ -78,7 +86,7 @@ aside {
   background: black;
   overflow: auto;
   color: white;
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 100%;
   z-index: 20; }
@@ -109,18 +117,26 @@ aside {
   top: 3.7em;
   z-index: 20;
   margin-left: .5em; }
+  #externo h3, #externo h4 {
+    display: none; }
+  #externo.active {
+    background: black;
+    margin: 0;
+    top: 0;
+    padding: 1em; }
+    #externo.active h3, #externo.active h4 {
+      display: inline-block;
+      text-align: center;
+      font-size: 2em;
+      line-height: 50px;
+      margin: 0;
+      text-transform: uppercase; }
 
 .img-wrapper img {
   width: 67px;
   padding: .5em;
   box-sizing: border-box;
   border: 1px solid #e4e409; }
-
-#externo.active {
-  background: black;
-  margin: 0;
-  top: 0;
-  padding: 1em; }
 
 @media (max-width: 1366px) {
   .img-wrapper img {
