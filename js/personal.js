@@ -1,4 +1,5 @@
 		$(document).ready(function(){
+        $(document).on("scroll", onScroll);
         $("#goDown").on('click', function(event) {
           if (this.hash !== "") {
             event.preventDefault();
@@ -40,4 +41,11 @@ function toggleMenuExterno(){
     $(".menu").toggle("fast").complete(
         $("#externo").toggle()
     );
+}
+function onScroll(event){
+    if($(document).scrollTop()>$(window).height()-80){
+        $("#externo").addClass("active");
+    }else{
+        $("#externo").removeClass("active");
+    }
 }
