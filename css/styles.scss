@@ -97,9 +97,8 @@ main h1{
 
 }
 /* Lateral NavBar */
-aside{
+#aside{
   display: none;
-  width:20%;
   background:black;
   overflow:auto;
   color:white;
@@ -150,8 +149,8 @@ aside{
     h3, h4 {
       display: inline-block;
       text-align: center;
-      font-size: 2em;
-      line-height: 50px;
+      font-size: 2.5em;
+      line-height: 67px;
       margin: 0;
       text-transform: uppercase;
     }
@@ -170,6 +169,31 @@ aside{
 @media (max-width: 1366px) {
   .img-wrapper img {
     width: 50px;
+  }
+  #externo h3,h4{
+    line-height:50px;
+    font-size:2em;
+  }
+}
+
+@media (max-width: 360px){
+  #header{
+    .header-title-wrapper #header-title{
+      font-size:4em;
+    }
+    .header-subtitle-wrapper #header-subtitle{
+      font-size:2.5em;
+    }
+  }
+  #externo.active{
+    h3,h4{
+      font-size:1.3em;
+      padding:0;
+      line-height:50px;
+    }
+  }
+  main h1{
+    font-size:3em;
   }
 }
 /** animate.css by Daniel Eden. https://github.com/daneden/animate.css **/
