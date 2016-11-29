@@ -16,7 +16,7 @@ body {
   #header a:visited {
     color: white; }
   #header a {
-    z-index: 5;
+    z-index: 25;
     position: relative;
     padding: .8em;
     font-size: 1.5em; }
@@ -140,7 +140,7 @@ main h1 {
 @media (max-width: 1366px) {
   .img-wrapper img {
     width: 50px; }
-  #externo h3, h4 {
+  #externo.active h3, #externo.active h4 {
     line-height: 50px;
     font-size: 2em; } }
 

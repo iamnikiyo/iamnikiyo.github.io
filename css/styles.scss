@@ -22,7 +22,7 @@ body{
     color:white;
   }
   a{
-    z-index: 5;
+    z-index: 25;
     position: relative;
     padding:.8em;
     font-size:1.5em;
@@ -170,9 +170,11 @@ main h1{
   .img-wrapper img {
     width: 50px;
   }
-  #externo h3,h4{
-    line-height:50px;
-    font-size:2em;
+  #externo.active{
+    h3,h4{
+      line-height:50px;
+      font-size:2em;
+    }
   }
 }
 
