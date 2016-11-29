@@ -87,7 +87,8 @@ main h1 {
   position: fixed;
   top: 0;
   height: 100%;
-  z-index: 20; }
+  z-index: 20;
+  overflow: auto; }
   #aside .menu-title {
     position: relative;
     top: 2em;
