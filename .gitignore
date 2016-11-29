@@ -34,3 +34,4 @@ dev/
 cms/core/config/
 node_modules/
 node_module/
+.idea/
