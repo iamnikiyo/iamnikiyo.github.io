@@ -16,7 +16,7 @@ body {
   #header a:visited {
     color: white; }
   #header a {
-    z-index: 25;
+    z-index: 15;
     position: relative;
     padding: .8em;
     font-size: 1.5em; }
@@ -83,7 +83,6 @@ main h1 {
 #aside {
   display: none;
   background: black;
-  overflow: auto;
   color: white;
   position: fixed;
   top: 0;
@@ -107,9 +106,40 @@ main h1 {
   #aside .menu-text {
     font-size: 3em;
     text-transform: uppercase; }
+  #aside #profile {
+    top: 6em;
+    position: relative;
+    height: 15em;
+    width: 100%; }
+    #aside #profile .profile-icon {
+      margin: 0 auto;
+      max-width: 50%; }
+    #aside #profile .profile-name {
+      top: 1em;
+      font-size: 1.5em;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase; }
+    #aside #profile:after {
+      content: '';
+      width: 95%;
+      box-sizing: border-box;
+      height: 2px;
+      background: #e4e409;
+      position: absolute;
+      bottom: 0;
+      left: 7%; }
   #aside #navbar {
     position: relative;
-    top: 5em; }
+    top: 10em; }
+    #aside #navbar ul li a:hover {
+      background: #e4e409;
+      color: black; }
+    #aside #navbar ul li a {
+      color: white;
+      font-size: 1.5em; }
+    #aside #navbar ul li {
+      margin-bottom: 1em; }
 
 #externo {
   position: fixed;

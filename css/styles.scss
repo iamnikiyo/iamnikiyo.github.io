@@ -22,7 +22,7 @@ body{
     color:white;
   }
   a{
-    z-index: 25;
+    z-index: 15;
     position: relative;
     padding:.8em;
     font-size:1.5em;
@@ -100,7 +100,6 @@ main h1{
 #aside{
   display: none;
   background:black;
-  overflow:auto;
   color:white;
   position: fixed;
   top:0;
@@ -128,10 +127,49 @@ main h1{
     font-size: 3em;
     text-transform: uppercase;
   }
+  #profile{
+    top: 6em;
+    position: relative;
+    height:15em;
+    width:100%;
+    .profile-icon{
+      margin:0 auto;
+      max-width:50%;
+    }
+    .profile-name{
+      top:1em;
+      font-size:1.5em;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
 
+    }
+    &:after{
+      content: '';
+      width: 95%;
+      box-sizing: border-box;
+      height: 2px;
+      background: $mainColor;
+      position: absolute;
+      bottom: 0;
+      left: 7%;
+    }
+  }
   #navbar{
     position: relative;
-    top:5em;
+    top:10em;
+
+      ul li a:hover{
+        background:$mainColor;
+        color:black;
+      }
+      ul li a {
+        color:white;
+        font-size:1.5em;
+      }
+    ul li{
+      margin-bottom:1em;
+    }
   }
 }// END LATERAL NAVBAR
 // external menu button wrapper #externo
