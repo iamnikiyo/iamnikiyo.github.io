@@ -204,7 +204,7 @@ main h1{
   border: 1px solid $mainColor;
 }
 
-
+/* ***** Media Queries ****** */
 @media (max-width: 1366px) {
   .img-wrapper img {
     width: 50px;
@@ -216,8 +216,22 @@ main h1{
     }
   }
 }
+@media (max-width: 1024px){
+  #header{
+    .header-title-wrapper #header-title{
+      font-size:12em;
+    }
 
-@media (max-width: 360px){
+  }
+}
+@media (max-width: 960px) {
+  #header {
+    .header-title-wrapper #header-title {
+      font-size: 10em;
+    }
+  }
+}
+@media (max-width: 450px){
   #header{
     .header-title-wrapper #header-title{
       font-size:4em;
@@ -235,6 +249,16 @@ main h1{
   }
   main h1{
     font-size:3em;
+  }
+}
+@media (max-width: 320px){
+  #header{
+    .header-title-wrapper #header-title{
+      font-size:3.5em;
+    }
+    .header-subtitle-wrapper #header-subtitle{
+      font-size:2.5em;
+    }
   }
 }
 /** animate.css by Daniel Eden. https://github.com/daneden/animate.css **/
