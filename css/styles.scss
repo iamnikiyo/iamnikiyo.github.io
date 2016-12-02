@@ -231,6 +231,31 @@ main h1{
     }
   }
 }
+@media (max-width: 800px) and (orientation: portrait){
+  #header{
+    .header-title-wrapper #header-title{
+      font-size:9em;
+    }
+  }
+}
+
+@media (max-width: 736px) and (orientation: landscape){
+  #header{
+    .header-title-wrapper #header-title{
+      font-size:6em;
+    }
+    .header-subtitle-wrapper{
+      font-size:.7em;
+    }
+    a{
+      font-size:1.2em;
+      padding:.8em;
+    }
+  }
+  #externo{
+    top:1.5em;
+  }
+}
 @media (max-width: 450px){
   #header{
     .header-title-wrapper #header-title{
