@@ -217,7 +217,7 @@ main h1{
     }
   }
 }
-@media (max-width: 1024px){
+@media (max-width: $screen-lg-min){
   #header{
     .header-title-wrapper #header-title{
       font-size:12em;
@@ -225,7 +225,7 @@ main h1{
 
   }
 }
-@media (max-width: 960px) {
+@media (max-width: $screen-md-min) {
   #header {
     .header-title-wrapper #header-title {
       font-size: 10em;
@@ -245,7 +245,7 @@ main h1{
   }
 }
 
-@media (max-width: 736px) and (orientation: landscape){
+@media (max-width: $screen-xs-max) and (orientation: landscape){
   #header{
     .header-title-wrapper #header-title{
       font-size:6em;
