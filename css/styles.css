@@ -5908,7 +5908,7 @@ main h1 {
   /* TODO actualizar para pantallas grandes +1280px la foto del menu*/ }
   #aside .menu-title {
     position: relative;
-    top: 2em;
+    margin-top: 2em;
     height: 7em;
     line-height: 7em;
     width: 100%; }
@@ -5925,7 +5925,7 @@ main h1 {
     font-size: 3em;
     text-transform: uppercase; }
   #aside #profile {
-    top: 5em;
+    margin-top: 5em;
     position: relative;
     height: 23em;
     width: 100%; }
@@ -5938,18 +5938,9 @@ main h1 {
       position: relative;
       text-align: center;
       text-transform: uppercase; }
-    #aside #profile:after {
-      content: '';
-      width: 95%;
-      box-sizing: border-box;
-      height: 2px;
-      background: #e4e409;
-      position: absolute;
-      bottom: 0;
-      left: 7%; }
   #aside #navbar {
     position: relative;
-    top: 7em; }
+    margin-top: 2em; }
     #aside #navbar ul li a:hover {
       color: black;
       background-color: transparent; }
@@ -6022,6 +6013,10 @@ main h1 {
     #aside #navbar ul li a {
       font-size: 2em; } }
 
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+  #navbar #profile {
+    height: 16em; } }
+
 @media (max-width: 767px) and (orientation: landscape) {
   #header .header-title-wrapper #header-title {
     font-size: 6em; }
@@ -6031,13 +6026,13 @@ main h1 {
     font-size: 1.2em;
     padding: .8em; }
   #aside #navbar {
-    top: 4em; }
+    top: 1em; }
   #externo {
     top: 1.5em; } }
 
 @media (max-width: 767px) and (orientation: portrait) {
   #aside #navbar {
-    top: 6em; } }
+    margin-top: 4em; } }
 
 @media (max-width: 450px) {
   #header .header-title-wrapper #header-title {
