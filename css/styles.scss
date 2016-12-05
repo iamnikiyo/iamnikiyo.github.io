@@ -162,15 +162,25 @@ main h1{
     top:10em;
 
       ul li a:hover{
-        background:$mainColor;
         color:black;
+        background-color:transparent;
+      }
+      ul li:hover{
+        box-shadow: 26em 0 rgba(228,228,9,.8) inset;
+        transition: all .5s;
+        text-indent: 1em;
       }
       ul li a {
         color:white;
         font-size:1.5em;
+
+
       }
     ul li{
       margin-bottom:1em;
+      box-shadow: 3px 0 $mainColor inset;
+
+
     }
   }
 }// END LATERAL NAVBAR
@@ -244,7 +254,23 @@ main h1{
     }
   }
 }
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+  #aside{
+    #navbar{
+      ul li:hover{
+        box-shadow: 45em 0 rgba(228,228,9,.8) inset;
 
+      }
+      ul li{
+        margin-bottom:3em;
+        a{
+          font-size:2em;
+        }
+      }
+
+    }
+  }
+}
 @media (max-width: $screen-xs-max) and (orientation: landscape){
   #header{
     .header-title-wrapper #header-title{
@@ -258,8 +284,21 @@ main h1{
       padding:.8em;
     }
   }
+  #aside {
+    #navbar {
+      top: 4em;
+    }
+  }
   #externo{
     top:1.5em;
+  }
+
+}
+@media (max-width: $screen-xs-max) and (orientation: portrait){
+  #aside {
+    #navbar {
+      top: 6em;
+    }
   }
 }
 @media (max-width: 450px){
@@ -282,6 +321,7 @@ main h1{
     font-size:3em;
   }
 }
+//Iphone 5s 320px
 @media (max-width: 320px){
   #header{
     .header-title-wrapper #header-title{
@@ -290,6 +330,10 @@ main h1{
     .header-subtitle-wrapper #header-subtitle{
       font-size:2.5em;
     }
+  }
+  #externo.active{
+    h3{width:75%;}
+    h4{display:none;}
   }
 }
 /** animate.css by Daniel Eden. https://github.com/daneden/animate.css **/

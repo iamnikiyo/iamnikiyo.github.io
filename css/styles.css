@@ -5950,13 +5950,18 @@ main h1 {
     position: relative;
     top: 10em; }
     #aside #navbar ul li a:hover {
-      background: #e4e409;
-      color: black; }
+      color: black;
+      background-color: transparent; }
+    #aside #navbar ul li:hover {
+      box-shadow: 26em 0 rgba(228, 228, 9, 0.8) inset;
+      transition: all .5s;
+      text-indent: 1em; }
     #aside #navbar ul li a {
       color: white;
       font-size: 1.5em; }
     #aside #navbar ul li {
-      margin-bottom: 1em; }
+      margin-bottom: 1em;
+      box-shadow: 3px 0 #e4e409 inset; }
 
 #externo {
   position: fixed;
@@ -6008,6 +6013,14 @@ main h1 {
   #header .header-title-wrapper #header-title {
     font-size: 9em; } }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  #aside #navbar ul li:hover {
+    box-shadow: 45em 0 rgba(228, 228, 9, 0.8) inset; }
+  #aside #navbar ul li {
+    margin-bottom: 3em; }
+    #aside #navbar ul li a {
+      font-size: 2em; } }
+
 @media (max-width: 767px) and (orientation: landscape) {
   #header .header-title-wrapper #header-title {
     font-size: 6em; }
@@ -6016,8 +6029,14 @@ main h1 {
   #header a {
     font-size: 1.2em;
     padding: .8em; }
+  #aside #navbar {
+    top: 4em; }
   #externo {
     top: 1.5em; } }
+
+@media (max-width: 767px) and (orientation: portrait) {
+  #aside #navbar {
+    top: 6em; } }
 
 @media (max-width: 450px) {
   #header .header-title-wrapper #header-title {
@@ -6035,7 +6054,11 @@ main h1 {
   #header .header-title-wrapper #header-title {
     font-size: 3.5em; }
   #header .header-subtitle-wrapper #header-subtitle {
-    font-size: 2.5em; } }
+    font-size: 2.5em; }
+  #externo.active h3 {
+    width: 75%; }
+  #externo.active h4 {
+    display: none; } }
 
 /** animate.css by Daniel Eden. https://github.com/daneden/animate.css **/
 .animated {
