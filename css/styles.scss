@@ -129,14 +129,15 @@ main h1{
     font-size: 3em;
     text-transform: uppercase;
   }
+  /* TODO actualizar para pantallas grandes +1280px la foto del menu*/
   #profile{
-    top: 6em;
+    top: 5em;
     position: relative;
-    height:15em;
+    height:23em;
     width:100%;
     .profile-icon{
       margin:0 auto;
-      max-width:50%;
+      max-width:100%;
     }
     .profile-name{
       top:1em;
@@ -159,7 +160,7 @@ main h1{
   }
   #navbar{
     position: relative;
-    top:10em;
+    top:7em;
 
       ul li a:hover{
         color:black;
