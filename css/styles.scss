@@ -209,6 +209,13 @@ main h1{
 
 /* ***** Media Queries ****** */
 @media (max-width: 1366px) {
+
+  #aside{
+    width:22%;
+    #profile{
+      height:20em;
+    }
+  }
   .img-wrapper img {
     width: 50px;
   }
@@ -264,8 +271,8 @@ main h1{
   }
 }
 
-@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation : landscape) {
-  #navbar {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation : landscape) {
+  #aside {
     #profile {
       height: 16em;
     }
@@ -285,7 +292,7 @@ main h1{
     }
   }
   #aside {
-    #navbar {
+  #navbar {
       top: 1em;
     }
   }
