@@ -5881,20 +5881,6 @@ body {
   border-color: #e4e409;
   color: white; }
 
-/* Main styles */
-#main {
-  background: white;
-  position: relative;
-  color: black;
-  text-align: center; }
-
-main h1 {
-  font-size: 5em;
-  position: absolute;
-  top: 30%;
-  margin: 0;
-  width: 100%; }
-
 /* Lateral NavBar */
 #aside {
   display: none;
@@ -5980,6 +5966,20 @@ main h1 {
   padding: .5em;
   box-sizing: border-box;
   border: 1px solid #e4e409; }
+
+/***** Main styles *****/
+#main {
+  background: white;
+  position: relative;
+  color: black;
+  text-align: center; }
+
+main h1 {
+  font-size: 5em;
+  position: absolute;
+  top: 30%;
+  margin: 0;
+  width: 100%; }
 
 /* ***** Media Queries ****** */
 @media (max-width: 1366px) {

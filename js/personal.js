@@ -25,7 +25,6 @@
       
 
       $('#header').css("height",$(window).height() + "px");
-      $('#main').css("top",$(window).height() + "px");
       $('#main').css("min-height",$(window).height() + "px");
 
 
@@ -34,7 +33,6 @@
 /* Window Resize control */
 $(window).resize(function(){
     $('#header').css("height",$(window).height() + "px");
-    $('#main').css("top",$(window).height() + "px");
     $('#main').css("min-height",$(window).height() + "px");
 });
 /* Show or Hide menu */
