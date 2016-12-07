@@ -211,9 +211,10 @@ main h1{
 }
 
 /* ***** Media Queries ****** */
-@media (max-width: 1366px) {
+@media (max-width: 1366px) and (min-width: 1148px) {
 
   #aside{
+    /*TODO intentar solucionar el problema que da width 22%*/
     width:22%;
     #profile{
       height:20em;
