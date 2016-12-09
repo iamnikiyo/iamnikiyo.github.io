@@ -205,28 +205,36 @@ main h1{
   top:30%;
   margin:0;
   width:100%;
-
-
-
 }
-
 /* ***** Media Queries ****** */
 @media (max-width: 1366px) and (min-width: 1148px) {
-
   #aside{
-    /*TODO intentar solucionar el problema que da width 22%*/
     width:22%;
     #profile{
       height:20em;
     }
   }
-  .img-wrapper img {
-    width: 50px;
+}
+@media (max-width: 1366px) {
+  #aside {
+    .menu-title {
+      .img-wrapper img {
+        width: 50px;
+      }
+    }
   }
-  #externo.active{
-    h3,h4{
-      line-height:50px;
-      font-size:2em;
+  #externo{
+    img{
+      width:50px;
+    }
+  }
+  #externo.active {
+    h3, h4 {
+      line-height: 50px;
+      font-size: 2em;
+    }
+    img{
+      width:50px;
     }
   }
 }

@@ -5984,15 +5984,20 @@ main h1 {
 /* ***** Media Queries ****** */
 @media (max-width: 1366px) and (min-width: 1148px) {
   #aside {
-    /*TODO intentar solucionar el problema que da width 22%*/
     width: 22%; }
     #aside #profile {
-      height: 20em; }
-  .img-wrapper img {
+      height: 20em; } }
+
+@media (max-width: 1366px) {
+  #aside .menu-title .img-wrapper img {
+    width: 50px; }
+  #externo img {
     width: 50px; }
   #externo.active h3, #externo.active h4 {
     line-height: 50px;
-    font-size: 2em; } }
+    font-size: 2em; }
+  #externo.active img {
+    width: 50px; } }
 
 @media (max-width: 1200px) {
   #header .header-title-wrapper #header-title {
