@@ -5972,14 +5972,15 @@ body {
   background: white;
   position: relative;
   color: black;
-  text-align: center; }
-
-main h1 {
-  font-size: 5em;
-  position: absolute;
-  top: 30%;
-  margin: 0;
-  width: 100%; }
+  text-align: center;
+  margin-top: 7%; }
+  #main .projects .card {
+    padding: 0;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    #main .projects .card .btn-outline-white {
+      border: 2px solid #fff;
+      color: #fff !important;
+      background-color: transparent; }
 
 /* ***** Media Queries ****** */
 @media (max-width: 1366px) and (min-width: 1148px) {
