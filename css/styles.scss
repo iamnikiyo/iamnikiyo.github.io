@@ -3,6 +3,8 @@ $mainColor: #e4e409 ;
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+/* Glyphicons font, need to import all font formats for work correctly */
+@font-face { font-family: "Glyphicons Halflings"; src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons-ha‌​lflingsregular") format("svg"); }
 
 html,body{
   width: 100%;
@@ -79,6 +81,7 @@ body{
 #header-subtitle{
   text-align: center;
   font-size: 3em;
+  letter-spacing: 3px;
 }
 .header-btn-wrapper{
   position: relative;
@@ -178,8 +181,6 @@ body{
   top:3.7em;
   z-index: 20;
   overflow-x:hidden;
-/* TODO problema con la barra blanca que sale a la izquierda */
-
   h3,h4{display: none;}
   &.active {
     background: black;
@@ -190,7 +191,7 @@ body{
       display: inline-block;
       text-align: center;
       font-size: 2.5em;
-      line-height: 67px;
+      line-height: 60px;
       margin: 0;
       text-transform: uppercase;
     }
@@ -199,14 +200,18 @@ body{
 
 // Menu button
 .img-wrapper img{
-  width: 67px;
+  width: 60px;
   padding: .5em;
   box-sizing: border-box;
   border: 1px solid $mainColor;
 }
 
 /***** Main styles *****/
-
+/* Set margin left and right to 0 to fixed right white bar */
+.row{
+  margin-left:0;
+  margin-right:0;
+}
 #main{
   background:white;
   position: relative;
@@ -216,8 +221,8 @@ body{
   padding:0;
   .projects {
     background:#222222;
-    padding-top:1em;
-    padding-bottom:1em;
+    padding-top:3em;
+    padding-bottom:3em;
     .card{
       padding: 0;
       box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
@@ -236,6 +241,8 @@ body{
 
   }
 }
+
+
 
 /* ***** Media Queries ****** */
 @media (max-width: 1366px) and (min-width: 1148px) {

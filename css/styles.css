@@ -5816,6 +5816,11 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/* Glyphicons font, need to import all font formats for work correctly */
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons-ha‌​lflingsregular") format("svg"); }
+
 html, body {
   width: 100%;
   height: 100%;
@@ -5877,7 +5882,8 @@ body {
     top: 25%; }
   #header #header-subtitle {
     text-align: center;
-    font-size: 3em; }
+    font-size: 3em;
+    letter-spacing: 3px; }
   #header .header-btn-wrapper {
     position: relative;
     top: 35%; }
@@ -5951,8 +5957,7 @@ body {
   position: fixed;
   top: 3.7em;
   z-index: 20;
-  overflow-x: hidden;
-  /* TODO problema con la barra blanca que sale a la izquierda */ }
+  overflow-x: hidden; }
   #externo h3, #externo h4 {
     display: none; }
   #externo.active {
@@ -5964,17 +5969,22 @@ body {
       display: inline-block;
       text-align: center;
       font-size: 2.5em;
-      line-height: 67px;
+      line-height: 60px;
       margin: 0;
       text-transform: uppercase; }
 
 .img-wrapper img {
-  width: 67px;
+  width: 60px;
   padding: .5em;
   box-sizing: border-box;
   border: 1px solid #e4e409; }
 
 /***** Main styles *****/
+/* Set margin left and right to 0 to fixed right white bar */
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
 #main {
   background: white;
   position: relative;
@@ -5984,8 +5994,8 @@ body {
   padding: 0; }
   #main .projects {
     background: #222222;
-    padding-top: 1em;
-    padding-bottom: 1em; }
+    padding-top: 3em;
+    padding-bottom: 3em; }
     #main .projects .card {
       padding: 0;
       box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
