@@ -204,17 +204,16 @@ body{
       padding: 0;
       box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
 
-      .btn-outline-white {
-        border: 2px solid #fff;
-        color: #fff!important;
-        background-color: transparent;
-      }
     }
 
 
   }
 }
-
+.btn-outline-white {
+  border: 2px solid #fff;
+  color: #fff!important;
+  background-color: transparent;
+}
 /* ***** Media Queries ****** */
 @media (max-width: 1366px) and (min-width: 1148px) {
   #aside{
