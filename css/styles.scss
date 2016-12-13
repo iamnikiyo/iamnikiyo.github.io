@@ -113,7 +113,7 @@ body{
     font-size: 3em;
     text-transform: uppercase;
   }
-  /* TODO actualizar para pantallas grandes +1280px la foto del menu*/
+
   #profile{
     margin-top: 5em;
     position: relative;
@@ -204,16 +204,21 @@ body{
       padding: 0;
       box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
 
+      .btn-white-outline {
+        border: 1px solid $mainColor;
+        color: #fff;
+        background-color: transparent;
+      }
+      .card-items{
+        position:relative;
+        margin-top:20%;
+      }
     }
 
 
   }
 }
-.btn-outline-white {
-  border: 2px solid #fff;
-  color: #fff!important;
-  background-color: transparent;
-}
+
 /* ***** Media Queries ****** */
 @media (max-width: 1366px) and (min-width: 1148px) {
   #aside{
@@ -295,6 +300,24 @@ body{
   #aside {
     #profile {
       height: 16em;
+    }
+  }
+}
+@media (max-width: $screen-xs-max){
+  #main{
+    background:white;
+    position: relative;
+    color:black;
+    text-align: center;
+    margin-top:7%;
+    .projects {
+      .card{
+        .card-items{
+          margin-top:0%;
+        }
+      }
+
+
     }
   }
 }
