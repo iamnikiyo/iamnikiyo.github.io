@@ -4,16 +4,16 @@
 		<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <title>Portfolio</title>
-		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/jquery-2.1.4.js"></script>
+        <script src="js/modernizr.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" href="css/cards-boostrap.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
         <script src="js/bootstrap.min.js"></script>
         <script src="js/personal.js"></script>
 
 	</head>
-	<body>
-		<header id="header" class="col-xs-12 col-sm-12 col-md-12">
+	<body data-hijacking="off" data-animation="scaleDown">
+		<header id="header" class=" col-xs-12 col-sm-12 col-md-12">
 			<div class="row header-title-wrapper">
 				<h1 id="header-title" class="col-xs-12 col-sm-12 col-md-12 animated pulse">Portfolio</h1>
 			</div>
@@ -61,7 +61,7 @@
 			</section>
 			<section class="cd-section projects">
 				<!-- CAROUSEL -->
-                <div class="container">
+                 <div class="container">
                     <div id="carousel-1" class="carousel slide" data-ride="carousel">
                         <!-- Indicadores de paginacion -->
                         <ol class="carousel-indicators">
@@ -112,5 +112,9 @@
             </section>
 
 		</main>
+		<!-- Scroll library -->
+		<script src="js/velocity.min.js"></script>
+		<script src="js/velocity.ui.min.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
