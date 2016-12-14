@@ -1,5 +1,9 @@
 /* Own Styles for personal Portfolio */
-$mainColor: #e4e409 ;
+$mainColor: #FDE142 ;
+// old color #e4e409
+$simpleGrey: #E4E4E4;
+$simpleWhite: #F6F6F6;
+$simpleDark: #262626;
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -17,6 +21,7 @@ html,body{
 body{
   font-family: 'Lato', sans-serif;
   color:white;
+  background:$simpleWhite;
   position:absolute;
   top:0;
 
@@ -100,8 +105,8 @@ body{
 /* Lateral NavBar */
 #aside{
   display: none;
-  background:black;
-  color:white;
+  background:$simpleDark;
+  color:$simpleWhite;
   position: fixed;
   top:0;
   height:100%;
@@ -116,13 +121,13 @@ body{
     width:100%;
     &:after{
       content: '';
-      width: 95%;
+      width: 100%;
       box-sizing: border-box;
       height: 2px;
       background: $mainColor;
       position: absolute;
       bottom: 0;
-      left: 7%;
+      left:0;
     }
   }
   .menu-text{
@@ -158,7 +163,7 @@ body{
         background-color:transparent;
       }
       ul li:hover{
-        box-shadow: 26em 0 rgba(228,228,9,.8) inset;
+        box-shadow: 26em 0 rgba(228,228,9,1) inset;
         transition: all .5s;
         text-indent: 1em;
       }
@@ -184,7 +189,7 @@ body{
   overflow-x:hidden;
   h3,h4{display: none;}
   &.active {
-    background: black;
+    background: $simpleDark;
     margin: 0;
     top: 0;
     padding: 1em;
@@ -214,14 +219,20 @@ body{
   margin-right:0;
 }
 #main{
-  background:white;
+  background:$simpleWhite;
   position: relative;
   color:black;
   text-align: center;
   margin-top:7%;
   padding:0;
+  .cd-section{
+    height:100vh;
+  }
+  .aboutMe{
+    background:$simpleWhite;
+  }
   .projects {
-    background:#222222;
+    background:$simpleGrey;
     padding-top:3em;
     padding-bottom:3em;
     .card{
