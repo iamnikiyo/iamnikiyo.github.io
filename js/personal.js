@@ -22,19 +22,9 @@
                 var newvalueY = height * pageY * -1 - 50;
                 $('#bimage').css("background-position", newvalueX+"px     "+newvalueY+"px");
       });
-      
-
-      $('#header').css("height",$(window).height() + "px");
-      $('#main').css("min-height",$(window).height() + "px");
-
 
 });
 
-/* Window Resize control */
-$(window).resize(function(){
-    $('#header').css("height",$(window).height() + "px");
-    $('#main').css("min-height",$(window).height() + "px");
-});
 /* Show or Hide menu */
 function toggleMenuInterno(){
     $(".menu").toggle("fast").complete(
