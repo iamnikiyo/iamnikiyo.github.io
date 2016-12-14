@@ -5990,28 +5990,25 @@ body {
 #main {
   background: #F6F6F6;
   position: relative;
-  color: black;
+  color: #262626;
   text-align: center;
   margin-top: 7%;
   padding: 0; }
   #main .cd-section {
     height: 100vh; }
+  #main .cd-section > h2 {
+    font-size: 5em;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em; }
   #main .aboutMe {
     background: #F6F6F6; }
   #main .projects {
     background: #E4E4E4;
-    padding-top: 3em;
-    padding-bottom: 3em; }
-    #main .projects .card {
-      padding: 0;
-      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-      #main .projects .card .btn-white-outline {
-        border: 1px solid #FDE142;
-        color: #fff;
-        background-color: transparent; }
-      #main .projects .card .card-items {
-        position: relative;
-        margin-top: 20%; }
+    padding: 3em 2em 3em 2em; }
+    #main .projects .carousel {
+      padding: 0; }
 
 /* ***** Media Queries ****** */
 @media (max-width: 1366px) and (min-width: 1148px) {
