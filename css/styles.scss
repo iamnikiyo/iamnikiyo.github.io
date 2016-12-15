@@ -229,23 +229,39 @@ body{
     height:100vh;
   }
   .cd-section > h2{
-    font-size:5em;
+    font-size:8em;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom:1em;
+    margin-bottom:.5em;
+
   }
   .aboutMe{
     background:$simpleWhite;
   }
   .projects {
-    background:$simpleGrey;
-    padding:3em 2em 3em 2em;
+    color:$simpleWhite;
+    background:$simpleDark;
+    padding:3em 0em 3em 0em;
+
+    .carousel-wrapper{
+      position: relative;
+
+    }
     .carousel{
       padding:0;
+      height: 100%;
     }
 
-
+    .project-info{
+      background:$simpleDark;
+      height:100%;
+      position: absolute;
+      right:0;
+        h2{
+          text-transform: uppercase;
+        }
+    }
   }
 }
 

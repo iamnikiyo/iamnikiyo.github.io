@@ -5997,18 +5997,29 @@ body {
   #main .cd-section {
     height: 100vh; }
   #main .cd-section > h2 {
-    font-size: 5em;
+    font-size: 8em;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 1em; }
+    margin-bottom: .5em; }
   #main .aboutMe {
     background: #F6F6F6; }
   #main .projects {
-    background: #E4E4E4;
-    padding: 3em 2em 3em 2em; }
+    color: #F6F6F6;
+    background: #262626;
+    padding: 3em 0em 3em 0em; }
+    #main .projects .carousel-wrapper {
+      position: relative; }
     #main .projects .carousel {
-      padding: 0; }
+      padding: 0;
+      height: 100%; }
+    #main .projects .project-info {
+      background: #262626;
+      height: 100%;
+      position: absolute;
+      right: 0; }
+      #main .projects .project-info h2 {
+        text-transform: uppercase; }
 
 /* ***** Media Queries ****** */
 @media (max-width: 1366px) and (min-width: 1148px) {
