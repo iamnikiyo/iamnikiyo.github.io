@@ -9,9 +9,10 @@
             }, 800, function(){
               window.location.hash = hash;
             });
-          } 
+          }
         });
-
+/* BACKGROUND HEADER MOVE (First Background)*/
+/*
       var movementStrength = 25;
       var height = movementStrength / $(window).height();
       var width = movementStrength / $(window).width();
@@ -22,7 +23,10 @@
                 var newvalueY = height * pageY * -1 - 50;
                 $('#bimage').css("background-position", newvalueX+"px     "+newvalueY+"px");
       });
-
+*/
+// Randomize header background
+	var number = Math.floor(Math.random()*3);
+	$('#bimage').css('background-image',"url(/images/header-images/" + number +".png)");
 });
 
 /* Show or Hide menu */
