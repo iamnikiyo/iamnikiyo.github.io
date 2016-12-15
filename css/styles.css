@@ -6013,13 +6013,21 @@ body {
     #main .projects .carousel {
       padding: 0;
       height: 100%; }
+    #main .projects img {
+      transition: all .3s ease-in-out; }
+    #main .projects img:hover {
+      transform: scale(1.1); }
     #main .projects .project-info {
       background: #262626;
       height: 100%;
       position: absolute;
       right: 0; }
       #main .projects .project-info h2 {
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        font-weight: bold; }
+      #main .projects .project-info hr {
+        width: 80%;
+        border-top: 1px solid #eeeeee80; }
 
 /* ***** Media Queries ****** */
 @media (max-width: 1366px) and (min-width: 1148px) {
@@ -6054,6 +6062,10 @@ body {
 @media (max-width: 800px) and (orientation: portrait) {
   #header .header-title-wrapper #header-title {
     font-size: 9em; } }
+
+@media (max-width: 991px) {
+  #main .projects .project-info {
+    display: none; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   #aside #navbar ul li:hover {

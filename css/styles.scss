@@ -251,16 +251,30 @@ body{
     .carousel{
       padding:0;
       height: 100%;
+
+    }
+    img{
+      transition: all .3s ease-in-out;
+    }
+    img:hover{
+      transform: scale(1.1) ;
     }
 
     .project-info{
       background:$simpleDark;
       height:100%;
       position: absolute;
+      //border-top:1px solid #F6F6F666;
+      //border-bottom:1px solid #F6F6F666;
       right:0;
         h2{
           text-transform: uppercase;
+          font-weight:bold;
         }
+      hr{
+        width:80%;
+        border-top:1px solid #eeeeee80;
+      }
     }
   }
 }
@@ -323,6 +337,15 @@ body{
   #header{
     .header-title-wrapper #header-title{
       font-size:9em;
+    }
+  }
+}
+@media (max-width: $screen-sm-max){
+  #main{
+    .projects{
+      .project-info{
+        display:none;
+      }
     }
   }
 }
