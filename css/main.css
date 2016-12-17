@@ -7,6 +7,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(normalize.css);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5822,6 +5823,17 @@ button.close {
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons-ha‌​lflingsregular") format("svg"); }
 
 /* Variables */
+/* Variables */
+body {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  background: #F6F6F6; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+/* Variables */
 /* Styles for header of web */
 #header {
   background: black;
@@ -5942,3 +5954,74 @@ button.close {
       #aside #navbar ul li a:hover {
         color: #262626;
         background-color: transparent; }
+
+#externo {
+  position: fixed;
+  top: 3.7em;
+  z-index: 20;
+  overflow-x: hidden; }
+  #externo h3,
+  #externo h4 {
+    display: none; }
+  #externo.active {
+    background: #262626;
+    margin: 0;
+    top: 0;
+    padding: 1em; }
+    #externo.active h3,
+    #externo.active h4 {
+      display: inline-block;
+      text-align: center;
+      font-size: 2.5em;
+      line-height: 60px;
+      margin: 0;
+      text-transform: uppercase; }
+
+.img-wrapper img {
+  width: 60px;
+  padding: .5em;
+  box-sizing: border-box;
+  border: 1px solid #FDE142; }
+
+/* Variables */
+#main {
+  background: #F6F6F6;
+  position: relative;
+  color: #262626;
+  text-align: center;
+  margin-top: 7%;
+  padding: 0; }
+  #main .cd-section {
+    height: 100vh; }
+  #main .cd-section > h2 {
+    font-size: 6em;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: .5em; }
+  #main .aboutMe {
+    background: #F6F6F6; }
+  #main .projects {
+    color: #F6F6F6;
+    background: #262626;
+    padding: 3em 0em 3em 0em; }
+    #main .projects .carousel-wrapper {
+      position: relative; }
+    #main .projects .carousel {
+      padding: 0;
+      height: 100%; }
+    #main .projects img {
+      transition: all .3s ease-in-out; }
+      #main .projects img:hover {
+        transform: scale(1.1); }
+    #main .projects .project-info {
+      background: #262626;
+      height: 100%;
+      position: absolute;
+      right: 0; }
+      #main .projects .project-info h2 {
+        text-transform: uppercase;
+        font-weight: bold; }
+      #main .projects .project-info hr {
+        width: 80%;
+        border-top: 1px solid #eeeeee80; }

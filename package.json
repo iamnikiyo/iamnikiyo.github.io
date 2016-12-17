@@ -1,7 +1,7 @@
 {
   "name": "iamnikiyo.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Persona web Portfolio",
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/gulp/bin/gulp.js"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/iamnikiyo/iamnikiyo.github.io.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nicolas Escobar Valle",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/iamnikiyo/iamnikiyo.github.io/issues"

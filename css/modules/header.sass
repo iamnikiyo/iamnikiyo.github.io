@@ -1,3 +1,4 @@
+@import "../base/variables"
 /* Styles for header of web */
 #header
   background: black
@@ -66,79 +67,3 @@
   background-color: transparent
   border-color: $mainColor
   color: $simpleWhite
-
-/* Lateral NavBar */
-#aside
-  display: none
-  background: $simpleDark
-  color: $simpleWhite
-  position: fixed
-  top: 0
-  height: 100%
-  z-index: 20
-  overflow: auto
-
-  .menu-title
-    position: relative
-    margin-top: 2em
-    height: 7em
-    line-height: 7em
-    width: 100%
-
-    &:after
-      content: ''
-      width: 100%
-      box-sizing: border-box
-      height: 2px
-      background: $mainColor
-      position: absolute
-      bottom: 0
-      left: 0
-
-    .menu-text
-      font-size: 3em
-      text-transform: uppercase
-
-  #profile
-    margin-top: 5em
-    position: relative
-    height: 23em
-    width: 100%
-
-    .profile-icon
-      margin: 0 auto
-      max-width: 100%
-
-    .profile-name
-      top: 1em
-      font-size: 1.5em
-      position: relative
-      text-align: center
-      text-transform: uppercase
-
-  #navbar
-    position: relative
-    margin-top: 2em
-    ul li
-      margin-bottom: 1em
-      box-shadow: 3px 0 $mainColor inset
-      &:hover
-        box-shadow: 26em 0 rgba(228,228,9,1) inset
-        transition: all .5s
-        text-indent: 1em
-
-    ul li a:hover
-      color: $simpleDark
-      background-color: transparent
-
-    ul li a
-      color: $simpleWhite
-      font-size: 1.5em
-      &:hover
-        color: $simpleDark
-        background:
-          color: transparent
-
-
-
-// END LATERAL NAVBAR

@@ -1,0 +1,53 @@
+@import "../base/variables"
+#main
+  background: $simpleWhite
+  position: relative
+  color: $simpleDark
+  text-align: center
+  margin-top: 7%
+  padding: 0
+
+  .cd-section
+    height: 100vh
+
+  .cd-section > h2
+    font-size: 6em
+    font-weight: 900
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: .5em
+
+  .aboutMe
+    background: $simpleWhite
+
+  .projects
+    color: $simpleWhite
+    background: $simpleDark
+    padding: 3em 0em 3em 0em
+
+    .carousel-wrapper
+      position: relative
+
+    .carousel
+      padding: 0
+      height: 100%
+
+    img
+      transition: all .3s ease-in-out
+
+      &:hover
+        transform: scale(1.1)
+
+    .project-info
+      background: $simpleDark
+      height: 100%
+      position: absolute
+      right: 0
+
+      h2
+        text-transform: uppercase
+        font-weight: bold
+
+      hr
+        width: 80%
+        border-top: 1px solid #eeeeee80

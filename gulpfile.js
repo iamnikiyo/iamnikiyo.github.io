@@ -15,6 +15,12 @@ gulp.task('stylesSass',function(){
       .pipe(gulp.dest('./css/'))
 });
 
+gulp.task('modules',function(){
+    gulp.src('./css/modules/*.sass')
+      .pipe(sass().on('error',sass.logError))
+      .pipe(gulp.dest('./css/'))
+});
+
 gulp.task('default', () => {
     browserSync.init({
         server: './'
@@ -22,7 +28,7 @@ gulp.task('default', () => {
     gulp.watch('./*.html').on('change',browserSync.reload);
     gulp.watch('./css/*.scss',['styles']);
     gulp.watch('./css/*.sass',['stylesSass']);
-    gulp.watch('./css/modules/*.sass',['stylesSass']);
+    gulp.watch('./css/modules/*.sass',['modules']);
     gulp.watch('./css/base/*.sass',['stylesSass']);
     gulp.watch('./css/*.css').on('change',browserSync.reload);
     gulp.watch('./js/*.js').on('change',browserSync.reload);

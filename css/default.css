@@ -1,0 +1,10 @@
+/* Variables */
+@import url(normalize.css);
+body {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  background: #F6F6F6; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }

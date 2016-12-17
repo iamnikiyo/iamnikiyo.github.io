@@ -4,7 +4,22 @@
       "title": "cssZenGarden",
       "desc": "Personal CSS file for ZenGarden project",
       "dev":true,
-      "image":"/images/works/cssZenGarden.png"
+      "image":"/images/works/cssZenGarden.png",
+      "tech":["HTML5","CSS3"]
+    },
+    {
+      "title": "LOL Website",
+      "desc": "Stadistic League Of Legends Website",
+      "dev":true,
+      "image":"/images/works/shadowlol.png",
+      "tech":["HTML5","CSS3","Django","Python","JavaScript"]
+    },
+    {
+      "title": "ShadowLoL Android",
+      "desc": "Stadistic League Of Legends APP",
+      "dev":true,
+      "image":"/images/works/shadowlolAndroid.png",
+      "tech":["Java"]
     }
   ]
 }
