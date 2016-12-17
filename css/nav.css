@@ -1,0 +1,90 @@
+/* Variables */
+/* Lateral NavBar */
+#aside {
+  display: none;
+  background: #262626;
+  color: #F6F6F6;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 20;
+  overflow: auto; }
+  #aside .menu-title {
+    position: relative;
+    margin-top: 2em;
+    height: 7em;
+    line-height: 7em;
+    width: 100%; }
+    #aside .menu-title:after {
+      content: '';
+      width: 100%;
+      box-sizing: border-box;
+      height: 2px;
+      background: #FDE142;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    #aside .menu-title .menu-text {
+      font-size: 3em;
+      text-transform: uppercase; }
+  #aside #profile {
+    margin-top: 5em;
+    position: relative;
+    height: 23em;
+    width: 100%; }
+    #aside #profile .profile-icon {
+      margin: 0 auto;
+      max-width: 100%; }
+    #aside #profile .profile-name {
+      top: 1em;
+      font-size: 1.5em;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase; }
+  #aside #navbar {
+    position: relative;
+    margin-top: 2em; }
+    #aside #navbar ul li {
+      margin-bottom: 1em;
+      box-shadow: 3px 0 #FDE142 inset; }
+      #aside #navbar ul li:hover {
+        box-shadow: 26em 0 #e4e409 inset;
+        transition: all .5s;
+        text-indent: 1em; }
+    #aside #navbar ul li a:hover {
+      color: #262626;
+      background-color: transparent; }
+    #aside #navbar ul li a {
+      color: #F6F6F6;
+      font-size: 1.5em; }
+      #aside #navbar ul li a:hover {
+        color: #262626;
+        background-color: transparent; }
+
+#externo {
+  position: fixed;
+  top: 3.7em;
+  z-index: 20;
+  overflow-x: hidden; }
+  #externo h3,
+  #externo h4 {
+    display: none; }
+  #externo.active {
+    background: #262626;
+    margin: 0;
+    top: 0;
+    padding: 1em; }
+    #externo.active h3,
+    #externo.active h4 {
+      display: inline-block;
+      text-align: center;
+      font-size: 2.5em;
+      line-height: 60px;
+      margin: 0;
+      text-transform: uppercase; }
+
+.img-wrapper img {
+  width: 60px;
+  padding: .5em;
+  box-sizing: border-box;
+  border: 1px solid #FDE142; }

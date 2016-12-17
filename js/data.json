@@ -13,13 +13,6 @@
       "dev":true,
       "image":"/images/works/shadowlol.png",
       "tech":["HTML5","CSS3","Django","Python","JavaScript"]
-    },
-    {
-      "title": "ShadowLoL Android",
-      "desc": "Stadistic League Of Legends APP",
-      "dev":true,
-      "image":"/images/works/shadowlolAndroid.png",
-      "tech":["Java"]
     }
   ]
 }

@@ -7,7 +7,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url(normalize.css);
+@import url(modules/normalize.css);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5833,6 +5833,9 @@ body {
   margin-left: 0;
   margin-right: 0; }
 
+.visible {
+  display: block; }
+
 /* Variables */
 /* Styles for header of web */
 #header {
@@ -5893,6 +5896,7 @@ body {
   border-color: #FDE142;
   color: #F6F6F6; }
 
+/* Variables */
 /* Lateral NavBar */
 #aside {
   display: none;
@@ -6018,7 +6022,10 @@ body {
       background: #262626;
       height: 100%;
       position: absolute;
-      right: 0; }
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
       #main .projects .project-info h2 {
         text-transform: uppercase;
         font-weight: bold; }
