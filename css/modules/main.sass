@@ -8,8 +8,8 @@
   padding: 0
 
   .cd-section
-    height: 100vh
-
+    min-height: 100vh
+    width: 100vw
   .cd-section > h2
     font-size: 6em
     font-weight: 900
@@ -66,3 +66,20 @@
       hr
         width: 80%
         border-top: 1px solid $mainColor
+
+// Fixing works width
+@media (max-width: 1279px)
+  #projects .carousel-wrapper .project-info
+    padding: 0
+
+@media (max-width: 1250px)
+  #projects .carousel-wrapper .carousel
+    display: block
+    width: 100vw
+    z-index: 5
+    margin: 0
+
+  #projects .carousel-wrapper .project-info
+    display: block
+    width: 100vw
+    position: relative
