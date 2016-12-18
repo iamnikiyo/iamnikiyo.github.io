@@ -6013,7 +6013,9 @@ body {
       position: relative; }
     #main .projects .carousel {
       padding: 0;
-      height: 100%; }
+      height: 100%;
+      margin-left: 1em;
+      width: 65%; }
     #main .projects img {
       transition: all .3s ease-in-out; }
       #main .projects img:hover {
@@ -6025,10 +6027,18 @@ body {
       right: 0;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
+      justify-content: center;
+      font-size: 1.3em;
+      padding: 1em; }
       #main .projects .project-info h2 {
+        font-size: 2em; }
+      #main .projects .project-info h3 {
+        font-size: 1.7em; }
+      #main .projects .project-info h2,
+      #main .projects .project-info h3 {
         text-transform: uppercase;
-        font-weight: bold; }
+        font-weight: bold;
+        color: #FDE142; }
       #main .projects .project-info hr {
         width: 80%;
-        border-top: 1px solid #eeeeee80; }
+        border-top: 1px solid #FDE142; }

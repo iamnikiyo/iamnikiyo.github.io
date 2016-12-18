@@ -3,13 +3,15 @@
     {
       "title": "cssZenGarden",
       "desc": "Personal CSS file for ZenGarden project",
+      "longDesc":"ZenGarden is a website which provides to you a html file, then you can make your own CSS. You can't change the html, it is a project to practice your CSS skills",
       "dev":true,
       "image":"/images/works/cssZenGarden.png",
       "tech":["HTML5","CSS3"]
     },
     {
       "title": "LOL Website",
-      "desc": "Stadistic League Of Legends Website",
+      "desc": "Stadistics League Of Legends Website",
+      "longDesc":"I like League of Legends, then I usually search info about it. There are a lot of different websites about statistics but I want to have my own statistics web.",
       "dev":true,
       "image":"/images/works/shadowlol.png",
       "tech":["HTML5","CSS3","Django","Python","JavaScript"]

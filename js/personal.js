@@ -82,12 +82,13 @@ function loadProjects(){
 			for(index in json.works){
 				if(json.works[index].title == title){
 					var projectInfo = $('<section class="col-md-4 col-xs-12 col-sm-12 project-info"></div>');
-					var desc = $('<p>'+json.works[index].desc+'</p>');
+					var desc = $('<p>'+json.works[index].longDesc+'</p>');
 					$('<h2>About Project</h2>').appendTo(projectInfo);
 					$('<hr>').appendTo(projectInfo);
 					$('<h3>Description</h3>').appendTo(projectInfo);
 					$(desc).appendTo(projectInfo);
 					$('<hr>').appendTo(projectInfo);
+					$('<h3>Languages</h3>').appendTo(projectInfo);
 					var tech = $('<p></p>');
 					var text = "";
 					for(let k = 0;k<json.works[index].tech.length;k++){

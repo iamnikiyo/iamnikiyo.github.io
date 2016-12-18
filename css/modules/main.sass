@@ -31,6 +31,8 @@
     .carousel
       padding: 0
       height: 100%
+      margin-left: 1em
+      width: 65%
 
     img
       transition: all .3s ease-in-out
@@ -46,11 +48,21 @@
       display: flex
       flex-direction: column
       justify-content: center
+      font-size: 1.3em
+      padding: 1em
 
       h2
+        font-size: 2em
+
+      h3
+        font-size: 1.7em
+
+      h2,
+      h3
         text-transform: uppercase
         font-weight: bold
+        color: $mainColor
 
       hr
         width: 80%
-        border-top: 1px solid #eeeeee80
+        border-top: 1px solid $mainColor
