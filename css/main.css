@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Imports */
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -6027,7 +6027,6 @@ body {
   position: relative;
   color: #262626;
   text-align: center;
-  margin-top: 7%;
   padding: 0; }
   #main .cd-section {
     min-height: 100vh;
@@ -6038,8 +6037,26 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: .5em; }
+  #main #about > h2 {
+    top: 1.3em;
+    position: relative; }
   #main .aboutMe {
     background: #F6F6F6; }
+    #main .aboutMe .flex-container {
+      top: 10em;
+      position: relative;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center; }
+    #main .aboutMe .text-container {
+      margin-left: 2em;
+      display: flex;
+      align-self: flex-start;
+      margin-top: 3em; }
+      #main .aboutMe .text-container p {
+        text-align: left;
+        font-size: 1.5em; }
   #main .projects {
     color: #F6F6F6;
     background: #262626;
@@ -6092,3 +6109,11 @@ body {
     display: block;
     width: 100vw;
     position: relative; } }
+
+/* Variables */
+footer {
+  padding: 1.5em;
+  background-color: #262626;
+  text-align: center; }
+  footer .footer-text {
+    font-weight: 300; }
