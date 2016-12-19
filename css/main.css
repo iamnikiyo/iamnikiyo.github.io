@@ -8,6 +8,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url(modules/normalize.css);
+@import url(modules/animate.css);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
