@@ -5827,7 +5827,8 @@ button.close {
 body {
   font-family: 'Lato', sans-serif;
   color: white;
-  background: #F6F6F6; }
+  background: #F6F6F6;
+  overflow-x: hidden; }
 
 .row {
   margin-left: 0;
@@ -5878,6 +5879,7 @@ body {
   overflow: auto;
   overflow-x: hidden;
   height: 100vh;
+  min-width: 100vw;
   padding: 0; }
   #header a {
     z-index: 15;
@@ -5897,7 +5899,7 @@ body {
     min-height: 100vh;
     z-index: 1;
     opacity: .5;
-    background-size: auto auto;
+    background-size: cover;
     background-position: top center;
     background-attachment: fixed;
     overflow: hidden; }
@@ -5929,6 +5931,12 @@ body {
   background-color: transparent;
   border-color: #FDE142;
   color: #F6F6F6; }
+
+@media (max-width: 425px) {
+  #header .header-title-wrapper #header-title {
+    font-size: 4.4em; }
+  #header .header-subtitle-wrapper #header-subtitle {
+    font-size: 2em; } }
 
 /* Variables */
 /* Lateral NavBar */
@@ -6020,6 +6028,12 @@ body {
   padding: .5em;
   box-sizing: border-box;
   border: 1px solid #FDE142; }
+
+@media (max-width: 768px) {
+  #aside #profile {
+    display: none; }
+  #aside #navbar ul li:hover {
+    box-shadow: 100vw 0 #e4e409 inset; } }
 
 /* Variables */
 #main {

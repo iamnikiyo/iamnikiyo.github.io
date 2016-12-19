@@ -6,6 +6,7 @@
   overflow: auto
   overflow-x: hidden
   height: 100vh
+  min-width: 100vw
   padding: 0
 
   a
@@ -28,7 +29,7 @@
     z-index: 1
     opacity: .5
     // Parallax
-    background-size: auto auto
+    background-size: cover
     background-position: top center
     background-attachment: fixed
     overflow: hidden
@@ -67,3 +68,10 @@
   background-color: transparent
   border-color: $mainColor
   color: $simpleWhite
+
+@media (max-width: 425px)
+  #header .header-title-wrapper #header-title
+    font-size: 4.4em
+
+  #header .header-subtitle-wrapper #header-subtitle
+    font-size: 2em

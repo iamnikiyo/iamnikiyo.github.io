@@ -88,3 +88,9 @@
   padding: .5em;
   box-sizing: border-box;
   border: 1px solid #FDE142; }
+
+@media (max-width: 768px) {
+  #aside #profile {
+    display: none; }
+  #aside #navbar ul li:hover {
+    box-shadow: 100vw 0 #e4e409 inset; } }
