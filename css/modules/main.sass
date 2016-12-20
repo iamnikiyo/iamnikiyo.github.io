@@ -14,10 +14,10 @@
     font-weight: 900
     text-align: center
     text-transform: uppercase
-    margin-bottom: .5em
+    margin-bottom: .3em
 
   #about > h2
-    top: 1.3em
+    top: 1.1em
     position: relative
 
   .aboutMe
@@ -42,9 +42,10 @@
 
 
   .projects
-    color: $simpleWhite
-    background: $simpleDark
+    color: $simpleDark
+    background: $mainColor
     padding: 3em 0em 3em 0em
+    min-height: 80vh
 
     .carousel-wrapper
       position: relative
@@ -62,7 +63,6 @@
         transform: scale(1.1)
 
     .project-info
-      background: $simpleDark
       height: 100%
       position: absolute
       right: 0
@@ -82,11 +82,28 @@
       h3
         text-transform: uppercase
         font-weight: bold
-        color: $mainColor
+        color: $simpleDark
 
       hr
         width: 80%
-        border-top: 1px solid $mainColor
+        border-top: 1px solid $simpleDark
+
+  #contact
+    color: $simpleWhite
+    padding-top: 3em
+    min-height: 70vh
+    background:
+      color: $simpleDark
+
+    h2
+      margin-top: 0
+
+    h3
+      color: $mainColor
+
+    .email-wrapper textarea
+      min-height: 30vh
+      margin-top: 1vh
 
 // Fixing works width
 @media (max-width: 1279px)

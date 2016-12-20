@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
         <script src="js/bootstrap.min.js"></script>
 				<script src="js/modernizr-2.7.2.js"></script>
+				<script src="js/email.min.js"></script>
         <script src="js/personal.js"></script>
 	</head>
 	<body>
@@ -56,48 +57,63 @@
         </div>
 		<main id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<section id="about" class="cd-section aboutMe">
-                <h2>About me</h2>
-								<div class="flex-container">
-										<div class="img-me-wrapper revealOnScroll" data-animation="slideInLeft">
-											<img src="images/aboutme.png" class="img-responsive"/>
-										</div>
-										<div class="text-container revealOnScroll" data-animation="zoomIn">
-											<p>Hi, I'm <strong>Nico</strong>, I'm a <strong>web application design student</strong>. I <strong>like</strong> to <strong>design websites</strong>.<br>
-												I am <strong>19 years old</strong> and in the last years I have dedicated myself to <strong>search</strong>, <strong>see</strong> and <strong>learn</strong>.<br>
-												In my free time I usually listen to all kinds of music, play some video games <br>
-												and sometimes I watch football games.</p>
-										</div>
-									</div>
+	      <h2>About me</h2>
+				<div class="flex-container">
+						<div class="img-me-wrapper revealOnScroll" data-animation="slideInLeft">
+							<img src="images/aboutme.png" class="img-responsive"/>
+						</div>
+						<div class="text-container revealOnScroll" data-animation="zoomIn">
+							<p>Hi, I'm <strong>Nico</strong>, I'm a <strong>web application design student</strong>. I <strong>like</strong> to <strong>design websites</strong>.<br>
+								I am <strong>19 years old</strong> and in the last years I have dedicated myself to <strong>search</strong>, <strong>see</strong> and <strong>learn</strong>.<br>
+								In my free time I usually listen to all kinds of music, play some video games <br>
+								and sometimes I watch football games.</p>
+						</div>
+					</div>
 			</section>
 			<section id="projects" class="cd-section projects">
 				<!-- CAROUSEL -->
                 <h2>Projects</h2>
 				<div class="row carousel-wrapper" >
-                    <div id="carousel-1" class="col-xs-12 col-sm-12 col-md-8 carousel slide" data-ride="carousel">
-                        <!-- Indicadores de paginacion -->
-                        <ol class="carousel-indicators">
+          <div id="carousel-1" class="col-xs-12 col-sm-12 col-md-8 carousel slide" data-ride="carousel">
+              <!-- Indicadores de paginacion -->
+              <ol class="carousel-indicators">
 
-                        </ol>
-                        <!-- Contenedor de los Slide -->
-                        <div role="list-box" class="carousel-inner">
-													<!-- Item added by js -->
-                        </div>
-                        <!-- Controles del slider -->
-                        <a class="left carousel-control" href="#carousel-1" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Prev</span>
-                        </a>
-                        <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-
+              </ol>
+              <!-- Contenedor de los Slide -->
+              <div role="list-box" class="carousel-inner">
+								<!-- Item added by js -->
+              </div>
+              <!-- Controles del slider -->
+              <a class="left carousel-control" href="#carousel-1" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Prev</span>
+              </a>
+              <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
 				</div>
-            </section>
+      </section>
 			<section id="contact" class="cd-section contact">
-                <h2>contact</h2>
-            </section>
+        	<h2>contact</h2>
+					<div class="contact-wrapper container col-xs-12">
+						<!-- Email -->
+						<div class="email-wrapper col-xs-6">
+							<h3>Send an email</h3>
+
+								<div class="form-group">
+									<input type="text" name="email" id="mail" placeholder="Your Email Here" class="form-control">
+									<textarea name="email-content" id="mailContent" class="form-control" placeholder="Your message here..."></textarea>
+								</div>
+								<input type="button" id="envioEmail" class="col-xs-2 col-xs-offset-5 btn btn-main" value="Send it">
+						</div>
+						<!-- Social Media -->
+						<div class="social-wrapper col-xs-6">
+							<h3>Social Media</h3>
+						</div>
+					</div>
+      </section>
 
 		</main>
 		<footer class="col-xs-12">

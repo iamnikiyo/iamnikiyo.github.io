@@ -5838,6 +5838,13 @@ body {
 .visible {
   display: block; }
 
+.form-control:focus {
+  border-color: #FDE142; }
+
+.btn-main {
+  background-color: #FDE142;
+  color: #262626; }
+
 /** animate.css by Daniel Eden. https://github.com/daneden/animate.css **/
 .animated {
   -webkit-animation-duration: 1s;
@@ -6051,9 +6058,9 @@ body {
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: .5em; }
+    margin-bottom: .3em; }
   #main #about > h2 {
-    top: 1.3em;
+    top: 1.1em;
     position: relative; }
   #main .aboutMe {
     background: #F6F6F6; }
@@ -6073,9 +6080,10 @@ body {
         text-align: left;
         font-size: 1.5em; }
   #main .projects {
-    color: #F6F6F6;
-    background: #262626;
-    padding: 3em 0em 3em 0em; }
+    color: #262626;
+    background: #FDE142;
+    padding: 3em 0em 3em 0em;
+    min-height: 80vh; }
     #main .projects .carousel-wrapper {
       position: relative; }
     #main .projects .carousel {
@@ -6088,7 +6096,6 @@ body {
       #main .projects img:hover {
         transform: scale(1.1); }
     #main .projects .project-info {
-      background: #262626;
       height: 100%;
       position: absolute;
       right: 0;
@@ -6105,10 +6112,22 @@ body {
       #main .projects .project-info h3 {
         text-transform: uppercase;
         font-weight: bold;
-        color: #FDE142; }
+        color: #262626; }
       #main .projects .project-info hr {
         width: 80%;
-        border-top: 1px solid #FDE142; }
+        border-top: 1px solid #262626; }
+  #main #contact {
+    color: #F6F6F6;
+    padding-top: 3em;
+    min-height: 70vh;
+    background-color: #262626; }
+    #main #contact h2 {
+      margin-top: 0; }
+    #main #contact h3 {
+      color: #FDE142; }
+    #main #contact .email-wrapper textarea {
+      min-height: 30vh;
+      margin-top: 1vh; }
 
 @media (max-width: 1279px) {
   #projects .carousel-wrapper .project-info {
