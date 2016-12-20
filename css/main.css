@@ -6096,6 +6096,7 @@ body {
       #main .projects img:hover {
         transform: scale(1.1); }
     #main .projects .project-info {
+      color: #262626;
       height: 100%;
       position: absolute;
       right: 0;
