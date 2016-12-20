@@ -14,7 +14,7 @@
     font-weight: 900
     text-align: center
     text-transform: uppercase
-    margin-bottom: .5em
+    margin-bottom: .3em
 
   #about > h2
     top: 1.3em
@@ -43,8 +43,9 @@
 
   .projects
     color: $simpleDark
-    background: $secondGrey
+    background: $mainColor
     padding: 3em 0em 3em 0em
+    min-height: 80vh
 
     .carousel-wrapper
       position: relative
@@ -62,7 +63,6 @@
         transform: scale(1.1)
 
     .project-info
-      background: $secondGrey
       height: 100%
       position: absolute
       right: 0
@@ -97,6 +97,9 @@
 
     h2
       margin-top: 0
+
+    h3
+      color: $mainColor
 
     .email-wrapper textarea
       min-height: 30vh

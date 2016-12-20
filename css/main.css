@@ -6058,7 +6058,7 @@ body {
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: .5em; }
+    margin-bottom: .3em; }
   #main #about > h2 {
     top: 1.3em;
     position: relative; }
@@ -6081,8 +6081,9 @@ body {
         font-size: 1.5em; }
   #main .projects {
     color: #262626;
-    background: #F2F1EF;
-    padding: 3em 0em 3em 0em; }
+    background: #FDE142;
+    padding: 3em 0em 3em 0em;
+    min-height: 80vh; }
     #main .projects .carousel-wrapper {
       position: relative; }
     #main .projects .carousel {
@@ -6095,7 +6096,6 @@ body {
       #main .projects img:hover {
         transform: scale(1.1); }
     #main .projects .project-info {
-      background: #F2F1EF;
       height: 100%;
       position: absolute;
       right: 0;
@@ -6123,6 +6123,8 @@ body {
     background-color: #262626; }
     #main #contact h2 {
       margin-top: 0; }
+    #main #contact h3 {
+      color: #FDE142; }
     #main #contact .email-wrapper textarea {
       min-height: 30vh;
       margin-top: 1vh; }
