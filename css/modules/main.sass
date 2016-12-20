@@ -42,8 +42,8 @@
 
 
   .projects
-    color: $simpleWhite
-    background: $simpleDark
+    color: $simpleDark
+    background: $secondGrey
     padding: 3em 0em 3em 0em
 
     .carousel-wrapper
@@ -62,7 +62,7 @@
         transform: scale(1.1)
 
     .project-info
-      background: $simpleDark
+      background: $secondGrey
       height: 100%
       position: absolute
       right: 0
@@ -82,11 +82,25 @@
       h3
         text-transform: uppercase
         font-weight: bold
-        color: $mainColor
+        color: $simpleDark
 
       hr
         width: 80%
-        border-top: 1px solid $mainColor
+        border-top: 1px solid $simpleDark
+
+  #contact
+    color: $simpleWhite
+    padding-top: 3em
+    min-height: 70vh
+    background:
+      color: $simpleDark
+
+    h2
+      margin-top: 0
+
+    .email-wrapper textarea
+      min-height: 30vh
+      margin-top: 1vh
 
 // Fixing works width
 @media (max-width: 1279px)

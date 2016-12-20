@@ -11,3 +11,10 @@ body {
 
 .visible {
   display: block; }
+
+.form-control:focus {
+  border-color: #FDE142; }
+
+.btn-main {
+  background-color: #FDE142;
+  color: #262626; }

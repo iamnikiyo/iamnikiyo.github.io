@@ -24,6 +24,9 @@
 						loadProjectInfo(item);
 
 				});
+
+				$('#envioEmail').on('click', sendEmail);
+
 });
 
 /* Show or Hide menu */
@@ -146,3 +149,12 @@ function loadProjects(){
 
   revealOnScroll();
 });
+
+// SENDING EMAILS via EmailJS
+	emailjs.init("user_gVU91BpdmI9Q2lvBVtVQe");
+//emailjs.send("gmail","template_yfET9Ba9",{name: "James", notes: "Check this out!"});
+	function sendEmail(){
+		emailjs.send("gmail","nico",{mail: $('#mail')[0].value,content: $('#mailContent')[0].value});
+		arguments[0].preventDefault();
+	
+}
