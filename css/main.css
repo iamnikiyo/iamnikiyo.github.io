@@ -6120,6 +6120,7 @@ body {
     color: #F6F6F6;
     padding-top: 3em;
     min-height: 70vh;
+    overflow: auto;
     background-color: #262626; }
     #main #contact h2 {
       margin-top: 0; }
