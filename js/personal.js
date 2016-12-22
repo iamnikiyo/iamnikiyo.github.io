@@ -17,7 +17,9 @@
 				$('#bimage').css('background-image',"url(/images/header-images/" + number +".png)");
 
 				loadProjects();
-
+				$('#carousel-1').bind('slide.bs.carousel', function (e) {
+					$('.project-info').addClass('animated-light fadeOut');
+				});
 				$('#carousel-1').bind('slid.bs.carousel', function (e) {
 				    var item = $('#carousel-1 .active .carousel-caption h1')[0].innerText;
 
@@ -102,6 +104,7 @@ function loadProjects(){
 					}
 					tech.append(text);
 					tech.appendTo(projectInfo);
+					projectInfo.addClass('animated fadeInRight');
 					projectInfo.appendTo('.carousel-wrapper');
 				}
 			}
@@ -156,5 +159,5 @@ function loadProjects(){
 	function sendEmail(){
 		emailjs.send("gmail","nico",{mail: $('#mail')[0].value,content: $('#mailContent')[0].value});
 		arguments[0].preventDefault();
-	
+
 }
