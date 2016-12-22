@@ -8,6 +8,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url(modules/normalize.css);
+@import url(modules/font-awesome.min.css);
 @import url(modules/animate.css);
 html {
   font-family: sans-serif;
@@ -5823,6 +5824,14 @@ button.close {
   font-family: "Glyphicons Halflings";
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons-ha‌​lflingsregular") format("svg"); }
 
+/* Font Awesome, need to import all font formats to work correctly */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /* Variables */
 /* Variables */
 body {
@@ -5845,10 +5854,19 @@ body {
   background-color: #FDE142;
   color: #262626; }
 
+.modal-content {
+  color: #262626; }
+
 /** animate.css by Daniel Eden. https://github.com/daneden/animate.css **/
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animated-light {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
@@ -6037,6 +6055,12 @@ body {
   box-sizing: border-box;
   border: 1px solid #FDE142; }
 
+@media (min-width: 1920px) {
+  #aside {
+    width: 20%; }
+    #aside #profile .profile-icon {
+      width: 75%; } }
+
 @media (max-width: 768px) {
   #aside #profile {
     display: none; }
@@ -6130,6 +6154,22 @@ body {
     #main #contact .email-wrapper textarea {
       min-height: 30vh;
       margin-top: 1vh; }
+    #main #contact .social-wrapper .social-items-wrapper .icon-wrapper {
+      font-size: 5em;
+      color: #FDE142; }
+      #main #contact .social-wrapper .social-items-wrapper .icon-wrapper a {
+        color: inherit;
+        display: block; }
+    #main #contact .social-wrapper .social-items-wrapper .icon-text-wrapper {
+      text-align: left;
+      font-size: 2em;
+      line-height: 100px; }
+      #main #contact .social-wrapper .social-items-wrapper .icon-text-wrapper a {
+        color: #F6F6F6;
+        text-decoration: none;
+        display: block; }
+      #main #contact .social-wrapper .social-items-wrapper .icon-text-wrapper a[href="https://es.linkedin.com/in/nicolás-escobar-5b9b52134"] {
+        margin-top: 8px; }
 
 @media (max-width: 1279px) {
   #projects .carousel-wrapper .project-info {

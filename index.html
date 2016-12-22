@@ -74,7 +74,7 @@
 				<!-- CAROUSEL -->
                 <h2>Projects</h2>
 				<div class="row carousel-wrapper" >
-          <div id="carousel-1" class="col-xs-12 col-sm-12 col-md-8 carousel slide" data-ride="carousel">
+          <div id="carousel-1" class="col-xs-12 col-sm-12 col-md-8 revealOnScroll carousel slide" data-ride="carousel" data-animation="fadeInLeft">
               <!-- Indicadores de paginacion -->
               <ol class="carousel-indicators">
 
@@ -99,18 +99,63 @@
         	<h2>contact</h2>
 					<div class="contact-wrapper container col-xs-12">
 						<!-- Email -->
-						<div class="email-wrapper col-xs-6">
+						<div class="email-wrapper col-xs-12 col-sm-6">
 							<h3>Send an email</h3>
-
 								<div class="form-group">
-									<input type="text" name="email" id="mail" placeholder="Your Email Here" class="form-control">
-									<textarea name="email-content" id="mailContent" class="form-control" placeholder="Your message here..."></textarea>
+									<input type="text" name="email" id="mail" required placeholder="Your Email Here" class="form-control">
+									<textarea name="email-content" id="mailContent" required class="form-control" placeholder="Your message here..."></textarea>
 								</div>
-								<input type="button" id="envioEmail" class="col-xs-2 col-xs-offset-5 btn btn-main" value="Send it">
+								<input type="button" id="envioEmail" class="col-xs-2 col-xs-offset-5 btn btn-main" data-toggle="modal" data-target="#modalEmail" value="Send it">
+								<div class="modal fade" id="modalEmail" role="dialog">
+									<!-- Modal -->
+						    <div class="modal-dialog modal-sm">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal">&times;</button>
+						          <h4 class="modal-title">Email Sent</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p>Your email has been sent.</p>
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div>
+						    </div>
 						</div>
+					</div>
 						<!-- Social Media -->
 						<div class="social-wrapper col-xs-6">
 							<h3>Social Media</h3>
+							<div class="social-items-wrapper revealOnScroll" data-animation="flipInX">
+
+								<div class="instagram-wrapper row col-xs-12">
+									<div class="icon-wrapper col-xs-2 col-xs-offset-3">
+										<a href="http://instagram.com/iamnikiyo"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+									</div>
+									<div class="icon-text-wrapper col-xs-6">
+										<a href="http://instagram.com/iamnikiyo">Instragram</a>
+									</div>
+								</div>
+
+								<div class="github-wrapper row col-xs-12">
+									<div class="icon-wrapper col-xs-2 col-xs-offset-3">
+										<a href="http://github.com/iamnikiyo"><i class="fa fa-github" aria-hidden="true"></i></a>
+									</div>
+									<div class="icon-text-wrapper col-xs-6">
+										<a href="http://github.com/iamnikiyo">GitHub</a>
+									</div>
+								</div>
+								<div class="linkedin-wrapper row col-xs-12">
+									<div class="icon-wrapper col-xs-2 col-xs-offset-3">
+										<a href="https://es.linkedin.com/in/nicolás-escobar-5b9b52134"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+									</div>
+									<div class="icon-text-wrapper col-xs-6">
+										<a href="https://es.linkedin.com/in/nicolás-escobar-5b9b52134">LinkedIn</a>
+									</div>
+								</div>
+
+							</div>
 						</div>
 					</div>
       </section>

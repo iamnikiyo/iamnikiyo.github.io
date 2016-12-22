@@ -89,6 +89,12 @@
   box-sizing: border-box;
   border: 1px solid #FDE142; }
 
+@media (min-width: 1920px) {
+  #aside {
+    width: 20%; }
+    #aside #profile .profile-icon {
+      width: 75%; } }
+
 @media (max-width: 768px) {
   #aside #profile {
     display: none; }
