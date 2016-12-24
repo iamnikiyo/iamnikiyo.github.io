@@ -6099,13 +6099,13 @@ body {
       flex-flow: row;
       align-items: center;
       justify-content: center; }
-      @media (width: 1366px) {
+      @media (max-width: 1366px) {
         #main .aboutMe .flex-container {
           top: 4em; } }
       #main .aboutMe .flex-container .img-me-wrapper {
         display: flex;
         justify-content: center; }
-        @media (width: 1366px) {
+        @media (max-width: 1366px) {
           #main .aboutMe .flex-container .img-me-wrapper img {
             width: 70%; } }
     #main .aboutMe .text-container {
