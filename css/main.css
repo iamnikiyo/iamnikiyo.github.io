@@ -5911,7 +5911,7 @@ body {
     z-index: 15;
     position: relative;
     padding: .8em;
-    font-size: 1.5em; }
+    font-size: 1.5vmax; }
     #header a:hover {
       color: #FDE142; }
     #header a:visited {
@@ -5933,7 +5933,7 @@ body {
     top: 20%;
     position: relative; }
     #header .header-title-wrapper #header-title {
-      font-size: 13em;
+      font-size: 16vw;
       font-weight: 900;
       text-transform: uppercase;
       z-index: 2;
@@ -5946,7 +5946,7 @@ body {
     top: 25%; }
     #header .header-subtitle-wrapper #header-subtitle {
       text-align: center;
-      font-size: 3em;
+      font-size: 5vw;
       letter-spacing: 3px; }
   #header .header-btn-wrapper {
     position: relative;
@@ -5958,12 +5958,6 @@ body {
   border-color: #FDE142;
   color: #F6F6F6; }
 
-@media (max-width: 425px) {
-  #header .header-title-wrapper #header-title {
-    font-size: 4.4em; }
-  #header .header-subtitle-wrapper #header-subtitle {
-    font-size: 2em; } }
-
 /* Variables */
 /* Lateral NavBar */
 #aside {
@@ -5972,9 +5966,9 @@ body {
   color: #F6F6F6;
   position: fixed;
   top: 0;
-  height: 100%;
+  height: 100vh;
   z-index: 20;
-  overflow: auto; }
+  overflow: hidden; }
   #aside .menu-title {
     position: relative;
     margin-top: 2em;
@@ -5994,10 +5988,14 @@ body {
       font-size: 3em;
       text-transform: uppercase; }
   #aside #profile {
-    margin-top: 5em;
+    margin-top: 20%;
     position: relative;
-    height: 23em;
     width: 100%; }
+    @media (max-width: 1366px) {
+      #aside #profile {
+        margin-top: 10%; }
+        #aside #profile .profile-icon {
+          width: 80%; } }
     #aside #profile .profile-icon {
       margin: 0 auto;
       max-width: 100%; }
@@ -6009,7 +6007,10 @@ body {
       text-transform: uppercase; }
   #aside #navbar {
     position: relative;
-    margin-top: 2em; }
+    margin-top: 20%; }
+    @media (max-width: 1366px) {
+      #aside #navbar {
+        margin-top: 10%; } }
     #aside #navbar ul li {
       margin-bottom: 1em;
       box-shadow: 3px 0 #FDE142 inset; }
@@ -6023,6 +6024,9 @@ body {
     #aside #navbar ul li a {
       color: #F6F6F6;
       font-size: 1.5em; }
+      @media (max-width: 1366px) {
+        #aside #navbar ul li a {
+          font-size: 1.3em; } }
       #aside #navbar ul li a:hover {
         color: #262626;
         background-color: transparent; }
@@ -6039,18 +6043,18 @@ body {
     background: #262626;
     margin: 0;
     top: 0;
-    padding: 1em; }
+    padding: .5em; }
     #externo.active h3,
     #externo.active h4 {
       display: inline-block;
       text-align: center;
-      font-size: 2.5em;
-      line-height: 60px;
+      font-size: 2em;
+      line-height: 50px;
       margin: 0;
       text-transform: uppercase; }
 
 .img-wrapper img {
-  width: 60px;
+  width: 50px;
   padding: .5em;
   box-sizing: border-box;
   border: 1px solid #FDE142; }
@@ -6084,7 +6088,7 @@ body {
     text-transform: uppercase;
     margin-bottom: .3em; }
   #main #about > h2 {
-    top: 1.1em;
+    top: .7em;
     position: relative; }
   #main .aboutMe {
     background: #F6F6F6; }
@@ -6095,6 +6099,15 @@ body {
       flex-flow: row;
       align-items: center;
       justify-content: center; }
+      @media (max-width: 1366px) {
+        #main .aboutMe .flex-container {
+          top: 4em; } }
+      #main .aboutMe .flex-container .img-me-wrapper {
+        display: flex;
+        justify-content: center; }
+        @media (max-width: 1366px) {
+          #main .aboutMe .flex-container .img-me-wrapper img {
+            width: 70%; } }
     #main .aboutMe .text-container {
       margin-left: 2em;
       display: flex;
@@ -6145,7 +6158,8 @@ body {
     color: #F6F6F6;
     padding-top: 3em;
     min-height: 70vh;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     background-color: #262626; }
     #main #contact h2 {
       margin-top: 0; }
@@ -6193,3 +6207,10 @@ footer {
   text-align: center; }
   footer .footer-text {
     font-weight: 300; }
+
+/* Variables */
+@media (min-width: 1024px) {
+  #header .header-title-wrapper #header-title {
+    font-size: 13vw; }
+  #header .header-subtitle-wrapper #header-subtitle {
+    font-size: 3vw; } }

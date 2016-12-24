@@ -13,7 +13,7 @@
     z-index: 15
     position: relative
     padding: .8em
-    font-size: 1.5em
+    font-size: 1.5vmax
     &:hover
       color: $mainColor
     &:visited
@@ -39,7 +39,7 @@
     position: relative
 
     #header-title
-      font-size: 13em
+      font-size: 16vw
       font-weight: 900
       text-transform: uppercase
       z-index: 2
@@ -54,7 +54,7 @@
 
     #header-subtitle
       text-align: center
-      font-size: 3em
+      font-size: 5vw
       letter-spacing: 3px
 
   .header-btn-wrapper
@@ -68,10 +68,3 @@
   background-color: transparent
   border-color: $mainColor
   color: $simpleWhite
-
-@media (max-width: 425px)
-  #header .header-title-wrapper #header-title
-    font-size: 4.4em
-
-  #header .header-subtitle-wrapper #header-subtitle
-    font-size: 2em

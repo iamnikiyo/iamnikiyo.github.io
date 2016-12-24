@@ -17,7 +17,7 @@
     margin-bottom: .3em
 
   #about > h2
-    top: 1.1em
+    top: .7em
     position: relative
 
   .aboutMe
@@ -29,6 +29,17 @@
       flex-flow: row
       align-items: center
       justify-content: center
+      @media (max-width: 1366px)
+        &
+            top: 4em
+
+      .img-me-wrapper
+        display: flex
+        justify-content: center
+        
+        @media (max-width: 1366px)
+          img
+            width: 70%
 
     .text-container
       margin-left: 2em
@@ -93,7 +104,8 @@
     color: $simpleWhite
     padding-top: 3em
     min-height: 70vh
-    overflow: auto
+    overflow-x: hidden
+    overflow-y: auto
     background:
       color: $simpleDark
 
