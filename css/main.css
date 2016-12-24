@@ -5911,7 +5911,7 @@ body {
     z-index: 15;
     position: relative;
     padding: .8em;
-    font-size: 1.5em; }
+    font-size: 1.5vmax; }
     #header a:hover {
       color: #FDE142; }
     #header a:visited {
@@ -5933,7 +5933,7 @@ body {
     top: 20%;
     position: relative; }
     #header .header-title-wrapper #header-title {
-      font-size: 13em;
+      font-size: 16vw;
       font-weight: 900;
       text-transform: uppercase;
       z-index: 2;
@@ -5946,7 +5946,7 @@ body {
     top: 25%; }
     #header .header-subtitle-wrapper #header-subtitle {
       text-align: center;
-      font-size: 3em;
+      font-size: 5vw;
       letter-spacing: 3px; }
   #header .header-btn-wrapper {
     position: relative;
@@ -5957,12 +5957,6 @@ body {
   background-color: transparent;
   border-color: #FDE142;
   color: #F6F6F6; }
-
-@media (max-width: 425px) {
-  #header .header-title-wrapper #header-title {
-    font-size: 4.4em; }
-  #header .header-subtitle-wrapper #header-subtitle {
-    font-size: 2em; } }
 
 /* Variables */
 /* Lateral NavBar */
@@ -6215,3 +6209,8 @@ footer {
     font-weight: 300; }
 
 /* Variables */
+@media (min-width: 1024px) {
+  #header .header-title-wrapper #header-title {
+    font-size: 13vw; }
+  #header .header-subtitle-wrapper #header-subtitle {
+    font-size: 3vw; } }
