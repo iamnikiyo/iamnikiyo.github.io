@@ -6214,3 +6214,17 @@ footer {
     font-size: 13vw; }
   #header .header-subtitle-wrapper #header-subtitle {
     font-size: 3vw; } }
+
+@media (max-width: 1024px) {
+  #header a {
+    font-size: 2vmax; } }
+
+/* Tablet media query */
+@media (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
+  #main #about h2 {
+    top: 1em; }
+  #main #about .flex-container {
+    top: 20vh;
+    padding: 1em; }
+    #main #about .flex-container img {
+      width: 100%; } }
