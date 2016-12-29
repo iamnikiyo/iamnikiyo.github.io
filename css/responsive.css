@@ -17,4 +17,20 @@
     top: 20vh;
     padding: 1em; }
     #main #about .flex-container img {
-      width: 100%; } }
+      width: 100%; }
+  #main #projects {
+    min-height: 915px; } }
+
+@media (min-width: 965px) and (max-width: 1250px) {
+  #main #projects {
+    min-height: 1120px; } }
+
+@media (min-width: 800px) and (max-width: 965px) {
+  #main #projects {
+    min-height: 938px; } }
+
+/* Smartphone media query*/
+@media (max-width: 414px) {
+  #externo.active h4,
+  #externo.active h3 {
+    font-size: 1.33em; } }
