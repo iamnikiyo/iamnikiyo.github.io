@@ -11,7 +11,10 @@
             });
           }
         });
-
+				//toogle a
+				$('#navbar ul').on('click', function(event){
+					toggleMenuExterno();
+				});
 				// Randomize header background
 				var number = Math.floor(Math.random()*3);
 				$('#bimage').css('background-image',"url(/images/header-images/" + number +".png)");
