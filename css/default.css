@@ -21,3 +21,6 @@ body {
 
 .modal-content {
   color: #262626; }
+
+.img-responsive {
+  height: 100%; }
