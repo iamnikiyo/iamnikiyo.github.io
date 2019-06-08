@@ -1,0 +1,12 @@
+@import './fonts.scss';
+
+$bg-grey: #1d1d1d;
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-grey{
+    background-color: $bg-grey;
+}
+
