@@ -2,13 +2,12 @@
 
 header{
     .navigation{
-        padding: .8rem;
         color: white;
         .name{
+            padding: .8rem;
             text-align: center;
         }
         .hamburger{
-            padding: 0;
             .hamburger-inner{
                 background-color: white;
                 &:before, &:after{
