@@ -4,8 +4,8 @@ header{
     .navigation{
         color: white;
         .name{
-            padding: .8rem;
             text-align: center;
+            line-height: 58px;
         }
         .hamburger{
             .hamburger-inner{
@@ -15,5 +15,15 @@ header{
                 }
             }
         }
+    }
+    .sidenav{
+        position: absolute;
+        top: 58px;
+        right: 0;
+        height: 100vh;
+        width: 35px;
+        color: white;
+        display: flex;
+        flex-direction: column-reverse;
     }
 }

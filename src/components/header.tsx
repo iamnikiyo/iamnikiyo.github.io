@@ -18,6 +18,11 @@ export class Header extends React.Component {
                         <Hamburger />
                     </div>
                 </div>
+                <div className="sidenav row bg-grey">
+                    <div className="col-xs-1"></div>
+                    <div className="col-xs-1"><i class='uil uil-twitter'></i></div>
+                    <div className="col-xs-1"><i class='uil uil-twitter'></i></div>
+                </div>
             </header>
         )
     }

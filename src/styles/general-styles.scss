@@ -1,12 +1,12 @@
 @import './fonts.scss';
+@import './vendor/unicons.css';
 
 $bg-grey: #1d1d1d;
 
 *{
     font-family: 'Montserrat', sans-serif;
 }
-
+html, body {overflow-x: hidden}
 .bg-grey{
     background-color: $bg-grey;
 }
-

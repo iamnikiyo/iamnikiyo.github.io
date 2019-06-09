@@ -1,0 +1,27 @@
+{
+    "items": [
+        {
+            "type": "header",
+            "social": [
+                {
+                    "name": "twitter",
+                    "icon": "",
+                    "alt": "Twitter",
+                    "url": "http://twitter.com/_burningsoul9"
+                },
+                {
+                    "name": "instagram",
+                    "icon": "",
+                    "alt": "Instagram",
+                    "url": "http://instagram.com/iamnikiyo"
+                },
+                {
+                    "name": "linkedin",
+                    "icon": "",
+                    "alt": "LinkedIn",
+                    "url": "https://linkedin.com/in/nicolas-escobar-valle"
+                }
+            ]
+        }
+    ]
+}
