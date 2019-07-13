@@ -1,9 +1,11 @@
 @import '../vendor/hamburgers.min.css';
 
 header{
+    position: absolute;
+    width: 100%;
     .navigation{
         color: white;
-        .name{
+        .nav-text{
             text-align: center;
             line-height: 58px;
         }
@@ -15,15 +17,5 @@ header{
                 }
             }
         }
-    }
-    .sidenav{
-        position: absolute;
-        top: 58px;
-        right: 0;
-        height: 100vh;
-        width: 35px;
-        color: white;
-        display: flex;
-        flex-direction: column-reverse;
     }
 }

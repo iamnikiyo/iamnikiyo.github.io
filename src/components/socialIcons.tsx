@@ -10,9 +10,10 @@ export class SocialIcons extends React.Component {
 
     render(){
 
-        return
-        (
-            <i class='uil uil-twitter'></i>
-        )
+        return(
+            <>
+                <i className='uil uil-twitter'></i>
+            </>
+            );
     }
 }

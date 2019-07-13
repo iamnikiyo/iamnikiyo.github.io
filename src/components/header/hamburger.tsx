@@ -2,9 +2,6 @@ import * as React from 'react';
 
 
 export class Hamburger extends React.Component {
-    constructor (props){
-        super(props);
-    }
 
     handleState(ev){
         const obj = document.getElementsByClassName('hamburger')[0];

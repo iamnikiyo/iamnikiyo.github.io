@@ -1,0 +1,11 @@
+@import '../vars.scss';
+
+.hero-banner{
+    width: 100vw;
+    height: 100vh;
+    .cont-img{
+        img{
+            width: 100%;
+        }
+    }
+}

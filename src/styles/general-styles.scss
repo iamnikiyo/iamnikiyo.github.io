@@ -1,7 +1,7 @@
 @import './fonts.scss';
 @import './vendor/unicons.css';
 
-$bg-grey: #1d1d1d;
+@import './vars.scss';
 
 *{
     font-family: 'Montserrat', sans-serif;
@@ -9,4 +9,8 @@ $bg-grey: #1d1d1d;
 html, body {overflow-x: hidden}
 .bg-grey{
     background-color: $bg-grey;
+}
+
+.p-0{
+    padding: 0;
 }

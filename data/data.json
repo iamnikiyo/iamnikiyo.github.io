@@ -2,6 +2,14 @@
     "items": [
         {
             "type": "header",
+            "navigation": 
+                {
+                    "name": "Nicolás Escobar Valle",
+                    "year": 2019
+                }
+        },
+        {
+            "type": "footer",
             "social": [
                 {
                     "name": "twitter",
