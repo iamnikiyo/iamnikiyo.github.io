@@ -7,11 +7,9 @@ export class Hero extends React.Component {
     render(){
 
         return (
-            <div className="row">
+            <div className="row m-0">
                 <div className="col-12 hero-banner">
-                    <div className="cont-img">
-                        <img src="https://dummyimage.com/1920x1280/00ff95" alt="ImgPlaceholder"/>
-                    </div>
+                    <h1>heey</h1>
                 </div>
             </div>
         );

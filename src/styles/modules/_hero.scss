@@ -3,9 +3,12 @@
 .hero-banner{
     width: 100vw;
     height: 100vh;
-    .cont-img{
-        img{
-            width: 100%;
-        }
+    background: url('https://dummyimage.com/1920x1280/00ff95') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    h1{
+        font-size: 5em;
+        align-self: center;
     }
 }
