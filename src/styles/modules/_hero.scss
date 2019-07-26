@@ -3,12 +3,60 @@
 .hero-banner{
     width: 100vw;
     height: 100vh;
-    background: url('https://dummyimage.com/1920x1280/00ff95') no-repeat;
+    background: rgba(0, 255, 149, .5);
     background-size: cover;
     display: flex;
     justify-content: center;
+
+    &:before{
+        content: "";
+        position: absolute;
+        width: 100vw;
+        opacity: .7;
+        height: 100vh;
+        background: url("https://iamnikiyo.github.io/images/header-images/2.png"); 
+    }
     h1{
         font-size: 5em;
         align-self: center;
+
+        &.text{
+            /* thanks to Artur Sedlukha | @sedlukha */
+            display: inline-block;
+            font-size: 15vmin;
+            line-height: 1.205;
+        
+            .text-first, .text-second{
+                position: relative;
+                }
+            
+                .text-word{
+                opacity: 0;
+                }
+            
+                .text-first-bg, .text-second-bg{
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 100;
+                transform-origin: left;
+                transform: scaleX(0);
+                }
+            
+                .text-first-bg{
+                background-color: #5fbff9;
+                }
+            
+                .text-second-bg{
+                background-color: #f06543;
+                }
+            
+                .text-second{
+                margin-left: 15vmin;
+                }
+        }
     }
 }
