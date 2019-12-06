@@ -10,7 +10,9 @@ html, body {overflow-x: hidden}
 .bg-grey{
     background-color: $bg-grey;
 }
-
+.bg-grey-lighter{
+    background-color: $bg-grey-lighter;
+}
 .p-0{
     padding: 0;
 }

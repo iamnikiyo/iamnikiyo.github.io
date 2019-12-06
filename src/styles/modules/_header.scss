@@ -1,9 +1,14 @@
 @import '../vendor/hamburgers.min.css';
 
 header{
+    display: none;
     position: fixed;
     z-index: 10;
     width: 100%;
+
+    &.active {
+        display: flex;
+    }
     .navigation{
         color: white;
         .nav-text{

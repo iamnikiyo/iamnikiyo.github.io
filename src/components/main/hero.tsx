@@ -12,6 +12,7 @@ export class Hero extends React.Component {
               secBg = document.querySelectorAll('.text-second-bg'),
               word  = document.querySelectorAll('.text-word');
             
+            
             tl
               .to(firstBg, 0.2, {scaleX:1})
               .to(secBg, 0.2, {scaleX:1})
@@ -19,6 +20,10 @@ export class Hero extends React.Component {
               .to(firstBg, 0.2, {scaleX:0})
               .to(secBg, 0.2, {scaleX:0});
             
+            tl.eventCallback('onComplete',() => {
+                let event = new Event('hero-text-complete',{'bubbles': true});
+                document.dispatchEvent(event);
+            });
           }
     }
     render(){
