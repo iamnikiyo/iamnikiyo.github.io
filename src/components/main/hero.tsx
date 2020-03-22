@@ -5,29 +5,7 @@ import '../../styles/modules/_hero.scss';
 export class Hero extends React.Component {
 
     componentDidMount(){
-<<<<<<< HEAD
         this.consoleText(['Hello World.', 'Console Text', 'Made with Love.'], 'text',['tomato','rebeccapurple','lightblue']);
-=======
-        window.onload = function(){
-            const tl = new TimelineLite({delay: 1}),
-              firstBg = document.querySelectorAll('.text-first-bg'),
-              secBg = document.querySelectorAll('.text-second-bg'),
-              word  = document.querySelectorAll('.text-word');
-            
-            
-            tl
-              .to(firstBg, 0.2, {scaleX:1})
-              .to(secBg, 0.2, {scaleX:1})
-              .to(word, 0.1, {opacity:1}, "-=0.1")  
-              .to(firstBg, 0.2, {scaleX:0})
-              .to(secBg, 0.2, {scaleX:0});
-            
-            tl.eventCallback('onComplete',() => {
-                let event = new Event('hero-text-complete',{'bubbles': true});
-                document.dispatchEvent(event);
-            });
-          }
->>>>>>> b0c99ce1f964e872e3aa3917ff277293b784a808
     }
 
     consoleText(words, id, colors) {
