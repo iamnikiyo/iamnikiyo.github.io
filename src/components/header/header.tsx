@@ -21,7 +21,7 @@ export class Header extends React.Component {
     render(){
         return (
             <header>
-                <div className="row end-xs navigation bg-grey">
+                <div className="row end-xs navigation bg-grey-transparent">
                     <div className="col-xs-4 nav-text"><span></span>{this.state.data["navigation"].name}</div>
                     <div className="col-xs-4 nav-text">
                         <Navigation/>
