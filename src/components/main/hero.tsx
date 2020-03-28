@@ -5,14 +5,19 @@ import '../../styles/modules/_hero.scss';
 
 export class Hero extends React.Component {
 
+    constructor(props){
+        super(props);
+        this.state = {'animationComplete' : false}
+    }
     componentDidMount(){
-        window.onload = function(){
+                        this.setState({'animationComplete' : true})
+
+        window.onload = () => {
             const tl = new TimelineLite({delay: 1}),
               firstBg = document.querySelectorAll('.text-first-bg'),
               secBg = document.querySelectorAll('.text-second-bg'),
               word  = document.querySelectorAll('.text-word');
-            
-            
+
             tl
               .to(firstBg, 0.2, {scaleX:1})
               .to(secBg, 0.2, {scaleX:1})
@@ -21,8 +26,7 @@ export class Hero extends React.Component {
               .to(secBg, 0.2, {scaleX:0});
             
             tl.eventCallback('onComplete',() => {
-                let event = new Event('hero-text-complete',{'bubbles': true});
-                document.dispatchEvent(event);
+                this.setState({'animationComplete' : true})
             });
           }
     }
