@@ -1,9 +1,10 @@
-var HtmlWebpackPlugin = require("html-webpack-plugin");
-var MiniCssExtractPlugin = require("mini-css-extract-plugin");
-var webpack = require("webpack");
-var path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const webpack = require("webpack");
+const path = require("path");
+const CopyPlugin = require('copy-webpack-plugin');
 
-var basePath = __dirname;
+const basePath = __dirname;
 
 module.exports = {
   context: path.join(basePath, "src"),
@@ -48,10 +49,15 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
-        loader: "file-loader",
+        loader: "file-loader",  
         options: {
           name: "assets/img/[name].[ext]?[hash]"
         }
+      },
+      {
+        test: /\.(mp4)$/,
+        loader: "file-loader",  
+        include: path.join(__dirname, 'src')
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
@@ -75,6 +81,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
-    })
+    }),
+    new CopyPlugin([
+      { from: 'public', to: 'public' }
+    ]),
   ]
 };

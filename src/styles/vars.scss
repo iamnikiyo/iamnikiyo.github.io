@@ -1,15 +1,15 @@
-<<<<<<< HEAD
-
+/* Palette */
 $black: #18252a;
 $primary-color: #3aafa9;
 $primary-lighter: #D1E8E2;
 $secondary-color: #D9B08C;
 $secondary-lighter: #FFCB9A;
-
-$black-transparency: rgba(44, 53, 49, 0.72);
+$black-transparency: rgba(44, 53, 49, 0);
 $white: #fff;
-=======
-$bg-grey: #333;
-$bg-grey-lighter: rgba(51, 51, 51, 0.88);
-$white: white;
->>>>>>> b0c99ce1f964e872e3aa3917ff277293b784a808
+
+/* common paddings and margins */
+$padding: 20px;
+
+/* Responsive */
+$tablet-width: 768px;
+$desktop-width: 1024px;
