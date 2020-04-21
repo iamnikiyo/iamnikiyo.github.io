@@ -9,6 +9,17 @@
                 }
         },
         {
+            "type": "hamburger",
+            "menuLabel" : "menú"
+        },
+        {
+            "type": "hero",
+            "scrollLabel": "scroll",
+            "helloLabel": "Hello",
+            "nameLabel" : "I'm Nico",
+            "meetLabel": "Nice to meet you"
+        },
+        {
             "type": "footer",
             "social": [
                 {

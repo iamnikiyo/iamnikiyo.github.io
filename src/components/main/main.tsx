@@ -10,7 +10,9 @@ export const Main = () => {
                 <div className="container">
                     <article className="col-12">
                         <h2>Skills</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, inventore corporis fuga soluta illo dignissimos aliquam molestiae quibusdam cupiditate repellat amet dolore et, possimus accusamus maiores repudiandae ipsa reprehenderit adipisci.</p>
+                        <picture>
+                            <img src="public/images/macbook.svg" alt=""/>
+                        </picture>
                     </article>
                 </div>
             </section>
