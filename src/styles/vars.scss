@@ -1,15 +1,13 @@
 /* Palette */
-$black: #18252a;
-$primary-color: #3aafa9;
-$primary-lighter: #D1E8E2;
-$secondary-color: #D9B08C;
-$secondary-lighter: #FFCB9A;
-$black-transparency: rgba(44, 53, 49, 0);
+
+$black: #000000;
 $white: #fff;
+$red: #F1515E;
+$blue: #1DBDE6;
 
 /* common paddings and margins */
 $padding: 20px;
 
-/* Responsive */
+/* breakpoints */
 $tablet-width: 768px;
 $desktop-width: 1024px;

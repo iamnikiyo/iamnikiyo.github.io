@@ -1,0 +1,39 @@
+@import '../styles/vars.scss';
+@import '../styles/mixins.scss';
+
+.app {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    padding: $padding $padding;
+
+    @include tablet {
+        border-radius: 40px;
+        padding: $padding * 2 $padding * 2;
+    }
+
+    @include desktop {
+        padding: $padding $padding * 4
+    }
+
+    .top{
+        display: grid;
+        //column-gap: $padding * 2;
+        grid-template-columns: repeat(8,1fr);
+        margin-bottom: $padding;
+
+        @include tablet{
+            margin-bottom: $padding * 2;
+        }
+        @include tablet{
+            margin-bottom: $padding * 3;
+        }
+        .navigation {
+            @include tablet {
+                grid-column: 1/9
+            }
+            @include desktop{
+                grid-column: 4/8;
+            }
+        }
+    }
+}

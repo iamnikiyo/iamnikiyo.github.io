@@ -1,0 +1,17 @@
+.cta {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    text-decoration: none;
+
+
+    border-radius: 20px;
+    
+    border: 1px solid transparent;
+    border-radius: 20px;
+    border-image-source: linear-gradient(95.88deg, rgba(241, 81, 94, 0.8) 0%, rgba(29, 189, 230, 0.8) 100%);
+    border-image-slice: 1;
+}

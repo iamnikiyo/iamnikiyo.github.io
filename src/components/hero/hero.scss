@@ -1,0 +1,42 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+.hero-component{
+    align-items: center;
+    display: grid;
+    justify-items: center;
+    row-gap: $padding;
+    @include desktop {
+        column-gap: $padding * 3;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0;
+    }
+    .text-wrapper {
+        display: grid;
+        row-gap: $padding;
+        color: $white;
+        text-align: center;
+
+        @include tablet{
+            text-align: left;
+            row-gap: $padding * 2;
+        }
+        
+        .title {
+            font-weight: 700;
+            font-size: 56px;
+        }
+
+        .text {
+            font-size: 28px;
+            @include tablet {
+                width: 70%;
+            }
+        }
+    }
+    .image-wrapper {
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,23 +1,56 @@
 import * as React from 'react';
-import { Header } from './components/header/header';
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import { Home } from './pages/home'
 import './styles/vendor/normalize.css';
-import './styles/vendor/flexboxgrid.min.css';
 import './styles/general-styles.scss';
-import { Main } from './components/main/main';
+import './styles/app.scss';
+import { Navigation } from './components/navigation/navigation';
+import { Cta } from './components/cta/cta';
+
+
 
 export class App extends React.Component {
+  navigation: any[];
+
   constructor(props) {
     super(props);
+    this.navigation = [
+      {
+        title: 'Home', link: '/home'
+      },
+      {
+        title: 'Who Am I', link: '/whoami'
+      },
+      {
+        title: 'Skills', link: '/skills'
+      },
+      {
+        title: 'Experience', link: '/experience'
+      }
+    ]
+
   }
 
   public render() {
     return (
-      <>
-        <Header/>
-        <Main/>
-        <footer></footer>
-      </>
+      <div className='app'>
+       <Router>
+        <Switch>
+            <Route path="/">
+              <div className='top'>
+                <Navigation items={this.navigation}/>
+                <Cta title='Contact me' type='email' link='#'/>
+              </div>
+              <Home />
+            </Route>
+          </Switch>
+       </Router>
+      </div>
     );
   }
 }

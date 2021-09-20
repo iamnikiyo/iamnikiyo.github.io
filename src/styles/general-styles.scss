@@ -1,27 +1,20 @@
-@import'./vendor/LineIcons.css';
 @import './fonts.scss';
-@import './vendor/unicons.css';
 @import './mixins.scss';
 @import './vars.scss';
 
 *{
     font-family: 'Montserrat', sans-serif;
 }
-html, body {overflow-x: hidden}
 
-.p-0{
-    padding: 0;
-}
+body {
+    background: linear-gradient(111.48deg, $blue 0%, $red 99.12%) no-repeat, #000000;
+    height: 100vh;
+    max-height: 100vh;
 
-.m-0{
-    margin: 0;
-}
-
-main{
-    > section {
-        padding: $padding * 2 0; 
-        @include desktop{
-            padding: $padding * 4 0;
-        }
+    @include tablet {
+        padding: $padding / 2 $padding * 1.5;
+    }
+    @include desktop{
+        padding: $padding * 2 $padding * 3;
     }
 }

@@ -1,0 +1,20 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+.navigation{
+    background: linear-gradient(270.61deg, rgba(241, 81, 94, 0.2) 1%, rgba(29, 189, 230, 0.2) 98.89%), rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-around;
+    text-align: center;
+    padding: $padding;
+
+    .nav-link{
+        color: white;
+        text-decoration: none;
+    }
+}
