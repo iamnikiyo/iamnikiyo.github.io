@@ -44,7 +44,7 @@ export class App extends React.Component {
             <Route path="/">
               <div className='top'>
                 <Navigation items={this.navigation}/>
-                <Cta title='Contact me' type='email' link='#'/>
+                <Cta title='Contact me' type='email' link='#' breakpoints={['desktop']}/>
               </div>
               <Home />
             </Route>

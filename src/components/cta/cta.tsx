@@ -4,7 +4,8 @@ import './cta.scss'
 interface Props {
     title: string,
     link?: string,
-    type: string
+    type: string,
+    breakpoints: string[]
 }
 export class Cta extends React.Component<Props> {
     
@@ -13,6 +14,6 @@ export class Cta extends React.Component<Props> {
     }
 
     render(){
-        return (<a className='cta' href={this.props.link}>{this.props.title}</a>)
+        return (<a className={`cta ${this.props.breakpoints.map(point => point)}`} href={this.props.link}><span>{this.props.title}</span></a>)
     }
 }

@@ -1,17 +1,41 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+$radius: 20px;
 .cta {
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0px;
-    text-decoration: none;
-
-
-    border-radius: 20px;
     
-    border: 1px solid transparent;
-    border-radius: 20px;
-    border-image-source: linear-gradient(95.88deg, rgba(241, 81, 94, 0.8) 0%, rgba(29, 189, 230, 0.8) 100%);
-    border-image-slice: 1;
+    border-radius: $radius;
+    background-image: linear-gradient(95.88deg, rgba(241, 81, 94, 0.8) 0%, rgba(29, 189, 230, 0.8) 100%);
+    box-sizing: border-box;
+    display: none;
+    text-decoration: none;
+    z-index: 2;
+    margin: 0 auto;
+	padding: 1px;
+    color: white;
+    width: 100%;
+    grid-column: 22/25;
+    
+    &.mobile{
+        display: block;
+    }
+    @include tablet {
+        &.tablet{
+            display: block;
+        }
+    }
+    @include desktop {
+        &.desktop{
+            display: block;
+        }
+    }
+    span {
+        align-items: center;
+        background: #482c34;
+        border-radius: $radius;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
 }
