@@ -4,7 +4,8 @@ import './navigation.scss'
 
 
 interface Props {
-    items: NavItemProps[]
+    items: NavItemProps[],
+    open: boolean
 }
 
 export class Navigation extends React.Component<Props> {
@@ -25,8 +26,11 @@ export class Navigation extends React.Component<Props> {
 
     render(){
         return (
-            <div className="navigation">
-                {this.generateItems()}
+            <div className={`navigation ${this.props.open ? 'open' : ''}`}>
+                <h2>Navigation</h2>
+                <div className="items">
+                    {this.generateItems()}
+                </div>
             </div>
         )
     }

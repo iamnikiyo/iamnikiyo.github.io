@@ -11,14 +11,23 @@ import './styles/general-styles.scss';
 import './styles/app.scss';
 import { Navigation } from './components/navigation/navigation';
 import { Cta } from './components/cta/cta';
+import { Burger } from './components/navigation/burger/burger';
 
+export interface AppState {
+  navigationOpen: boolean
+}
 
+interface Props {
 
-export class App extends React.Component {
+}
+
+export class App extends React.Component<Props, AppState> {
   navigation: any[];
 
   constructor(props) {
     super(props);
+    this.setState( {navigationOpen: false} )
+
     this.navigation = [
       {
         title: 'Home', link: '/home'
@@ -43,7 +52,8 @@ export class App extends React.Component {
         <Switch>
             <Route path="/">
               <div className='top'>
-                <Navigation items={this.navigation}/>
+                <Burger appState={this.state}/>
+                <Navigation open={this.state.navigationOpen} items={this.navigation}/>
                 <Cta title='Contact me' type='email' link='#' breakpoints={['desktop']}/>
               </div>
               <Home />
