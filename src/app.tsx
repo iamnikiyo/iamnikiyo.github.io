@@ -22,11 +22,12 @@ interface Props {
 }
 
 export class App extends React.Component<Props, AppState> {
-  navigation: any[];
+  navigation: any[]
+  state = {navigationOpen: false}
 
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
-    this.setState( {navigationOpen: false} )
+    
 
     this.navigation = [
       {
@@ -52,9 +53,9 @@ export class App extends React.Component<Props, AppState> {
         <Switch>
             <Route path="/">
               <div className='top'>
-                <Burger appState={this.state}/>
+                <Burger open={this.state.navigationOpen} onClick={() => {this.setState({navigationOpen: !this.state.navigationOpen})}}/>
                 <Navigation open={this.state.navigationOpen} items={this.navigation}/>
-                <Cta title='Contact me' type='email' link='#' breakpoints={['desktop']}/>
+                <Cta title='Contact me' type='email' link='#' breakpoints={['mobile','desktop']}/>
               </div>
               <Home />
             </Route>

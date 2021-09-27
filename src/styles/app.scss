@@ -5,9 +5,10 @@
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(20px);
     padding: $padding $padding;
-
+    min-height: 100vh;
     @include tablet {
         border-radius: 40px;
+        min-height: unset;
         padding: $padding * 2 $padding * 2;
     }
 

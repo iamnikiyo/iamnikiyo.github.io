@@ -3,28 +3,31 @@
 
 $radius: 20px;
 .cta {
-    
     border-radius: $radius;
     background-image: linear-gradient(95.88deg, rgba(241, 81, 94, 0.8) 0%, rgba(29, 189, 230, 0.8) 100%);
     box-sizing: border-box;
     display: none;
     text-decoration: none;
-    z-index: 2;
+    z-index: 5;
     margin: 0 auto;
 	padding: 1px;
     color: white;
     width: 100%;
-    grid-column: 22/25;
+    grid-column: 13/25;
     
-    &.mobile{
-        display: block;
+    @include mobile {
+        &.mobile{
+            display: block;
+        }
     }
+    
     @include tablet {
         &.tablet{
             display: block;
         }
     }
     @include desktop {
+        grid-column: 22/25;
         &.desktop{
             display: block;
         }

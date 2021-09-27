@@ -7,7 +7,7 @@ export interface NavItemProps {
 
 export class NavItem extends React.Component<NavItemProps> {
 
-    constructor(props){
+    constructor(props: NavItemProps){
         super(props)
     }
 

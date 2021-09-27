@@ -9,11 +9,16 @@ interface Props {
 }
 export class Cta extends React.Component<Props> {
     
-    constructor(props){
+    constructor(props: Props){
         super(props)
     }
 
+    addBreakpoints() {
+        let breakpoints = ''
+        this.props.breakpoints.map(point =>  breakpoints += `${point} `)
+        return breakpoints
+    }
     render(){
-        return (<a className={`cta ${this.props.breakpoints.map(point => point)}`} href={this.props.link}><span>{this.props.title}</span></a>)
+        return (<a className={`cta ${this.addBreakpoints()}`} href={this.props.link}><span>{this.props.title}</span></a>)
     }
 }

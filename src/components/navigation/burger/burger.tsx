@@ -1,20 +1,21 @@
 import * as React from 'react'
 import {AppState} from '../../../app'
+import './burger.scss'
 
 interface Props {
-    appState: AppState
+    onClick: any,
+    open: boolean
 }
 export class Burger extends React.Component<Props> {
 
-    constructor(props){
+    constructor(props: Props){
         super(props)
     }
-    open(){
-        this.props.appState.navigationOpen = true
-    }
+
     render() {
-        return (<div onClick={this.open} className='burger'>
-            <img src='public/images/burger-open.svg' />
+        return (<div onClick={this.props.onClick} className={`burger ${this.props.open ? 'open' : 'close'}`}>
+            <img className='open' src={`public/images/burger-open.svg`} />
+            <img className='close' src={`public/images/close.svg`} />
         </div>)
     }
 }

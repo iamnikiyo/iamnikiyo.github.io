@@ -5,7 +5,13 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
-
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
 body {
     background: linear-gradient(111.48deg, $blue 0%, $red 99.12%) no-repeat, #000000;
     height: 100vh;

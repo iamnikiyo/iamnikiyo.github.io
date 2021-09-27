@@ -1,0 +1,26 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/mixins.scss';
+
+.burger {
+    align-self: center;
+    img.open {
+        height: 50px;
+    }
+    img.close {
+        display: none;
+        height: 35px;
+    }
+    &.open{
+        z-index: 15;
+        grid-column: reverse;
+        img.open {
+            display: none;
+        }
+        img.close {
+            display: flex;
+        }
+    }
+    @include tablet {
+        display: none;
+    }
+}

@@ -9,10 +9,11 @@
         position: absolute;
         height: 100vh;
         overflow-y: hidden;
-        padding: $padding * 2 $padding;
+        padding: $padding * 3 $padding;
         top: 0;
         left: 0;
         width: 100%;
+        z-index: 10;
         &:after{
             content: '';
             width: 100%;
@@ -32,21 +33,23 @@
         .items {
             display: grid;
             font-size: 24px;
-            row-gap: $padding * 2;
+            row-gap: $padding * 1.5;
             padding-top: $padding * 2;
         }
     }
     
     @include tablet {
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-sizing: border-box;
-        backdrop-filter: blur(4px);
-        border-radius: 20px;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        justify-content: space-around;
-        text-align: center;
-        padding: $padding;
+        .items{
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-sizing: border-box;
+            backdrop-filter: blur(4px);
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            justify-content: space-around;
+            text-align: center;
+            padding: $padding;
+        }
     }
 
     h2 {
