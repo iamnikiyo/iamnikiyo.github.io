@@ -1,0 +1,14 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+.social {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    padding: $padding;
+    svg {
+        color: white;
+        height: 35px;
+        width: 35px;
+    }
+}
