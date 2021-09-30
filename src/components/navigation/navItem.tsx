@@ -5,15 +5,7 @@ export interface NavItemProps {
     link: string
 }
 
-export class NavItem extends React.Component<NavItemProps> {
+export function NavItem({title, link}: NavItemProps){
+    return (<a href={link} className='nav-link'>{title}</a>)
 
-    constructor(props: NavItemProps){
-        super(props)
-    }
-
-    render(){
-        return (<a href={this.props.link} className='nav-link'>{this.props.title}</a>)
-    }
 }
-
-export default NavItem

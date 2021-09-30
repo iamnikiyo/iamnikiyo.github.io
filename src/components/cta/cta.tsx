@@ -5,20 +5,14 @@ interface Props {
     title: string,
     link?: string,
     type: string,
-    breakpoints: string[]
+    breakpoints: any[]
 }
-export class Cta extends React.Component<Props> {
-    
-    constructor(props: Props){
-        super(props)
-    }
 
-    addBreakpoints() {
+export function Cta(props: Props) {
+    const breakpoints = () => {
         let breakpoints = ''
-        this.props.breakpoints.map(point =>  breakpoints += `${point} `)
+        props.breakpoints.map(point =>  breakpoints += `${point} `)
         return breakpoints
     }
-    render(){
-        return (<a className={`cta ${this.addBreakpoints()}`} href={this.props.link}><span>{this.props.title}</span></a>)
-    }
+    return (<a className={`cta ${breakpoints()}`} href={props.link}><span>{props.title}</span></a>)
 }

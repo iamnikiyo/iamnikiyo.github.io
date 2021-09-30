@@ -27,10 +27,14 @@ $radius: 20px;
         }
     }
     @include desktop {
-        grid-column: 22/25;
+        grid-column: 21/25;
         &.desktop{
             display: block;
         }
+    }
+    @include xl {
+        grid-column: 23/25;
+
     }
     span {
         align-items: center;

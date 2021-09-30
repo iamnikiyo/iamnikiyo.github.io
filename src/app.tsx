@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from 'react'
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,6 +12,7 @@ import './styles/app.scss';
 import { Navigation } from './components/navigation/navigation';
 import { Cta } from './components/cta/cta';
 import { Burger } from './components/navigation/burger/burger';
+import { useState } from "react";
 
 export interface AppState {
   navigationOpen: boolean
@@ -21,17 +22,13 @@ interface Props {
 
 }
 
-export class App extends React.Component<Props, AppState> {
-  navigation: any[]
-  state = {navigationOpen: false}
+export function App() {
 
-  constructor(props: Props) {
-    super(props);
-    
-
-    this.navigation = [
+  const [navigation, setNavigation] = useState({
+    navigationOpen: false,
+    items: [
       {
-        title: 'Home', link: '/home'
+        title: 'Home', link: '/'
       },
       {
         title: 'Who Am I', link: '/whoami'
@@ -43,25 +40,29 @@ export class App extends React.Component<Props, AppState> {
         title: 'Experience', link: '/experience'
       }
     ]
+  })
 
+  const handleMobileNavigation = () => {
+  
+    setNavigation(prevNavigation => {
+      return {...prevNavigation, navigationOpen: !prevNavigation.navigationOpen}
+    })
   }
 
-  public render() {
-    return (
-      <div className='app'>
-       <Router>
-        <Switch>
-            <Route path="/">
-              <div className='top'>
-                <Burger open={this.state.navigationOpen} onClick={() => {this.setState({navigationOpen: !this.state.navigationOpen})}}/>
-                <Navigation open={this.state.navigationOpen} items={this.navigation}/>
-                <Cta title='Contact me' type='email' link='#' breakpoints={['mobile','desktop']}/>
-              </div>
-              <Home />
-            </Route>
-          </Switch>
-       </Router>
-      </div>
-    );
-  }
+  return (
+    <div className='app'>
+     <Router>
+      <Switch>
+          <Route path="/">
+            <div className='top'>
+              <Burger open={navigation.navigationOpen} onClick={handleMobileNavigation}/>
+              <Navigation open={navigation.navigationOpen} items={navigation.items}/>
+              <Cta title='Contact me' type='email' link='#' breakpoints={['mobile','desktop']}/>
+            </div>
+            <Home />
+          </Route>
+        </Switch>
+     </Router>
+    </div>
+  );
 }

@@ -7,28 +7,16 @@ interface Props {
     image: string,
     type: string,
 }
-
-export class Hero extends React.Component<Props> {
-
-    constructor(props){
-        super(props)
-    }
-
-    render(){
-        return (
-            <div className={`hero-component ${this.props.type}`}>
-                <div className='text-wrapper'>
-                    <div className="title">{this.props.title}</div>
-                    <div className="text">{this.props.text}</div>
-                </div>
-                <div className='image-wrapper'>
-                    <img src={this.props.image} />
-                </div>
+export function Hero(props : Props){
+    return (
+        <div className={`hero-component ${props.type}`}>
+            <div className='text-wrapper'>
+                <div className="title">{props.title}</div>
+                <div className="text">{props.text}</div>
             </div>
-        )
-    }
-
-
+            <div className='image-wrapper'>
+                <img src={props.image} />
+            </div>
+        </div>
+    )
 }
-
-export default Hero;
