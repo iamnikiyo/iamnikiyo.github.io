@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Hero } from '../components/hero/hero'
-import { Social } from '../components/social/social'
+import { Hero } from '../../components/hero/hero'
+import { Social } from '../../components/social/social'
 import './home.scss'
 
 export function Home() {

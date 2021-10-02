@@ -5,7 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { Home } from './pages/home'
+import { Home } from './pages/home/home'
 import './styles/vendor/normalize.css';
 import './styles/general-styles.scss';
 import './styles/app.scss';
@@ -13,6 +13,7 @@ import { Navigation } from './components/navigation/navigation';
 import { Cta } from './components/cta/cta';
 import { Burger } from './components/navigation/burger/burger';
 import { useState } from "react";
+import { Contact } from './pages/contact/contact';
 
 export interface AppState {
   navigationOpen: boolean
@@ -53,14 +54,23 @@ export function App() {
     <div className='app'>
      <Router>
       <Switch>
-          <Route path="/">
+        <Route path="/contact">
             <div className='top'>
               <Burger open={navigation.navigationOpen} onClick={handleMobileNavigation}/>
               <Navigation open={navigation.navigationOpen} items={navigation.items}/>
-              <Cta title='Contact me' type='email' link='#' breakpoints={['mobile','desktop']}/>
+              <Cta title='Contact me' type='email' link='/contact' breakpoints={['mobile','desktop']}/>
+            </div>
+            <Contact />
+          </Route>
+          <Route exact path="/">
+            <div className='top'>
+              <Burger open={navigation.navigationOpen} onClick={handleMobileNavigation}/>
+              <Navigation open={navigation.navigationOpen} items={navigation.items}/>
+              <Cta title='Contact me' type='email' link='/contact' breakpoints={['mobile','desktop']}/>
             </div>
             <Home />
           </Route>
+
         </Switch>
      </Router>
     </div>

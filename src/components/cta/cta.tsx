@@ -1,5 +1,6 @@
 import * as React from 'react'
 import './cta.scss'
+import { Link } from 'react-router-dom'
 
 interface Props {
     title: string,
@@ -14,5 +15,9 @@ export function Cta(props: Props) {
         props.breakpoints.map(point =>  breakpoints += `${point} `)
         return breakpoints
     }
-    return (<a className={`cta ${breakpoints()}`} href={props.link}><span>{props.title}</span></a>)
+    return (
+    <div className={`cta ${breakpoints()}`}>
+        <Link to={props.link}><span>{props.title}</span></Link>
+    </div>
+        )
 }

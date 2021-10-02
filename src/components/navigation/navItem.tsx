@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Link } from 'react-router-dom'
 
 export interface NavItemProps {
     title: string,
@@ -6,6 +7,10 @@ export interface NavItemProps {
 }
 
 export function NavItem({title, link}: NavItemProps){
-    return (<a href={link} className='nav-link'>{title}</a>)
+    return (
+        <div className='nav-link'>
+            <Link to={link}>{title}</Link>
+        </div>
+    )
 
 }
