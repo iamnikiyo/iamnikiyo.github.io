@@ -7,11 +7,13 @@
 }
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+}
+
+*, *:before, *:after {
     box-sizing: inherit;
-  }
+}
   
+
 body {
     background: linear-gradient(111.48deg, $blue 0%, $red 99.12%) no-repeat, #000000;
     height: 100vh;
@@ -22,5 +24,16 @@ body {
     }
     @include desktop{
         padding: $padding * 2 $padding * 3;
+    }
+
+    h1 {
+        color: $white;
+        font-size: 36px;
+        margin: 0;
+        text-align: center;
+
+        @include tablet {
+            font-size: 48px
+        }
     }
 }
