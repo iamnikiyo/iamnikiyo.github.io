@@ -58,7 +58,7 @@ export function App() {
             <div className='top'>
               <Burger open={navigation.navigationOpen} onClick={handleMobileNavigation}/>
               <Navigation open={navigation.navigationOpen} items={navigation.items}/>
-              <Cta title='Contact me' type='email' link='/contact' breakpoints={['mobile','desktop']}/>
+              <Cta title='Contact me'  link='/contact' breakpoints={['mobile','desktop']}/>
             </div>
             <Contact />
           </Route>
@@ -66,7 +66,7 @@ export function App() {
             <div className='top'>
               <Burger open={navigation.navigationOpen} onClick={handleMobileNavigation}/>
               <Navigation open={navigation.navigationOpen} items={navigation.items}/>
-              <Cta title='Contact me' type='email' link='/contact' breakpoints={['mobile','desktop']}/>
+              <Cta title='Contact me'  link='/contact' breakpoints={['mobile','desktop']}/>
             </div>
             <Home />
           </Route>

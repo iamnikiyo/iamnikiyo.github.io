@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 interface Props {
     title: string,
     link?: string,
-    type: string,
-    breakpoints: any[]
+    breakpoints: any[],
+    onClick?: any
 }
 
 export function Cta(props: Props) {
@@ -17,7 +17,12 @@ export function Cta(props: Props) {
     }
     return (
     <div className={`cta border-gradient ${breakpoints()}`}>
-        <Link to={props.link}>{props.title}</Link>
+        {props.link ? 
+            <Link to={props.link}>{props.title}</Link> 
+            :
+            <a href='#' onClick={props.onClick}>{props.title}</a>
+        }
+        
     </div>
         )
 }

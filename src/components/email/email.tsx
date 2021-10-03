@@ -10,6 +10,11 @@ interface Props {
 }
 export function Email({image, emailPlaceholder, textPlaceholder, ctaText} : Props){
 
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        console.log('het')
+    }
+
     return (
         <div className='email-area'>
             <div className='image'>
@@ -22,7 +27,7 @@ export function Email({image, emailPlaceholder, textPlaceholder, ctaText} : Prop
                 <div className="border-gradient">
                     <textarea className='item' name="message" placeholder={textPlaceholder}></textarea>
                 </div>
-                <Cta title={ctaText} type='form' breakpoints={['mobile','tablet','desktop']} />
+                <Cta title={ctaText} onClick={handleSubmit} breakpoints={['mobile','tablet','desktop']} />
             </div>
         </div>
     )

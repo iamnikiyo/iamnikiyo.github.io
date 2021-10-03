@@ -27,16 +27,11 @@
         .border-gradient {
             padding: 4px;
             backdrop-filter: blur(1px);
-            border-radius: 10px;
-
-           &:before {
-                border-radius: 10px;
-           }
+            
         }
         .item {
             background-color: transparent;
             border: 0;
-            border-radius: 10px;
             width: 100%;
             color: $white;
             font-size: 12px;
@@ -55,6 +50,16 @@
         textarea{
             padding-top: $padding;
             resize: none;
+        }
+
+        .cta {
+            grid-column: unset;
+            font-size: 12px;
+            padding: $padding / 2.5 $padding * 2;
+            width: auto;
+            a {
+                z-index: 5;
+            }
         }
     }
 }
