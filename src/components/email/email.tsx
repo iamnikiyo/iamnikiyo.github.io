@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { Cta } from '../cta/cta';
+import './email.scss'
 
 interface Props {
     image: string,
@@ -14,9 +16,13 @@ export function Email({image, emailPlaceholder, textPlaceholder, ctaText} : Prop
                 <img src={image} />
             </div>
             <div className='form'>
-                <input type="email" name='email' placeholder={emailPlaceholder} />
-                <textarea name="message" placeholder={textPlaceholder}></textarea>
-                <button>{ctaText}</button>
+                <div className="border-gradient">
+                    <input className='item' type="email" name='email' placeholder={emailPlaceholder} />
+                </div>
+                <div className="border-gradient">
+                    <textarea className='item' name="message" placeholder={textPlaceholder}></textarea>
+                </div>
+                <Cta title={ctaText} type='form' breakpoints={['mobile','tablet','desktop']} />
             </div>
         </div>
     )

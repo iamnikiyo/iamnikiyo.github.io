@@ -16,8 +16,8 @@ export function Cta(props: Props) {
         return breakpoints
     }
     return (
-    <div className={`cta ${breakpoints()}`}>
-        <Link to={props.link}><span>{props.title}</span></Link>
+    <div className={`cta border-gradient ${breakpoints()}`}>
+        <Link to={props.link}>{props.title}</Link>
     </div>
         )
 }

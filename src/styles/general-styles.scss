@@ -16,8 +16,7 @@ html {
 
 body {
     background: linear-gradient(111.48deg, $blue 0%, $red 99.12%) no-repeat, #000000;
-    height: 100vh;
-    max-height: 100vh;
+    min-height: 100vh;
 
     @include tablet {
         padding: $padding / 2 $padding * 1.5;
@@ -35,5 +34,30 @@ body {
         @include tablet {
             font-size: 48px
         }
+    }
+
+    .border-gradient {
+        padding: 10px;
+        display: inline-block;
+        position:relative;
+        z-index:0;
+        border-radius: 20px;
+      }
+    .border-gradient:before {
+        content:"";
+        border-radius: 20px;
+        position:absolute;
+        z-index:-1;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        padding: 2px;
+        background: linear-gradient(to right,#F1515E, #1DBDE6);
+        -webkit-mask: 
+            linear-gradient(#fff 0 0) content-box, 
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: exclude;
     }
 }
