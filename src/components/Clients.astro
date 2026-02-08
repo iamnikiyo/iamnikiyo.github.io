@@ -1,0 +1,26 @@
+---
+import { CLIENTS } from '../constants';
+import GlassCard from './ui/GlassCard.astro';
+---
+<section id="clients" class="scroll-mt-32">
+  <div class="flex items-center gap-4 mb-8">
+    <h3 class="text-2xl font-bold text-white">Client Partnerships</h3>
+    <div class="h-[1px] bg-white/10 flex-grow"></div>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    {CLIENTS.map((client) => (
+      <GlassCard 
+        className="h-32 flex flex-col items-center justify-center gap-3 cursor-pointer group hover:bg-white/5"
+        hoverEffect={false} // Custom hover implemented in class
+      >
+         <div class="transition-transform duration-300 group-hover:scale-110 group-hover:text-primary text-gray-500">
+           <span class="material-symbols-outlined text-4xl">{client.icon}</span>
+         </div>
+         <span class="text-xs text-gray-500 font-bold uppercase tracking-wider group-hover:text-white transition-colors">
+           {client.name}
+         </span>
+      </GlassCard>
+    ))}
+  </div>
+</section>

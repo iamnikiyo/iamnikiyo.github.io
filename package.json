@@ -1,25 +1,15 @@
 {
-  "name": "iamnikiyo.github.io",
-  "version": "1.0.0",
-  "description": "Persona web Portfolio",
-  "main": "index.js",
+  "name": "astro-portfolio",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "start": "./node_modules/gulp/bin/gulp.js"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamnikiyo/iamnikiyo.github.io.git"
-  },
-  "keywords": [],
-  "author": "Nicolas Escobar Valle",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iamnikiyo/iamnikiyo.github.io/issues"
-  },
-  "homepage": "https://github.com/iamnikiyo/iamnikiyo.github.io#readme",
-  "devDependencies": {
-    "browser-sync": "^2.18.2",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2"
+  "dependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "astro": "^5.17.1"
   }
 }

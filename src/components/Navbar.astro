@@ -1,0 +1,67 @@
+---
+---
+<header class="sticky top-0 z-50 w-full header-glass">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    
+    <!-- Logo Area -->
+    <div class="flex items-center gap-3">
+      <div class="size-8 rounded-lg bg-primary flex items-center justify-center text-white shadow-lg shadow-primary/20">
+        <span class="material-symbols-outlined text-xl">architecture</span>
+      </div>
+      <h1 class="text-white text-lg font-bold tracking-tight">Nicolás Escobar</h1>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="#journey" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Journey</a>
+      <a href="#clients" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Clients</a>
+      <a href="#certifications" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Certifications</a>
+    </nav>
+
+    <!-- Mobile Toggle -->
+    <button id="mobile-menu-toggle" class="md:hidden text-white">
+      <span id="mobile-menu-open-icon" class="material-symbols-outlined text-3xl">menu</span>
+      <span id="mobile-menu-close-icon" class="material-symbols-outlined text-3xl hidden">close</span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-white/5 bg-surface-dark absolute w-full left-0 p-4 flex flex-col gap-4 shadow-2xl">
+       <a href="#journey" class="text-base font-medium text-gray-300 py-2">Journey</a>
+       <a href="#clients" class="text-base font-medium text-gray-300 py-2">Clients</a>
+       <a href="#certifications" class="text-base font-medium text-gray-300 py-2">Certifications</a>
+    </div>
+</header>
+
+<style>
+  .header-glass {
+    background: rgba(22, 25, 30, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+</style>
+
+<script>
+  const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const openIcon = document.getElementById('mobile-menu-open-icon');
+  const closeIcon = document.getElementById('mobile-menu-close-icon');
+
+  if (mobileMenuToggle && mobileMenu && openIcon && closeIcon) {
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      openIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    // Close menu when a link is clicked
+    const links = mobileMenu.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        openIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
+  }
+</script>

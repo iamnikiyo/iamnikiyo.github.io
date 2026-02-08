@@ -1,0 +1,86 @@
+---
+import { EXPERIENCES } from '../constants';
+import GlassCard from './ui/GlassCard.astro';
+---
+<section id="journey" class="scroll-mt-32">
+  <div class="flex items-center gap-4 mb-16">
+    <h3 class="text-2xl font-bold text-white">Professional Journey</h3>
+    <div class="h-[1px] bg-white/10 flex-grow"></div>
+  </div>
+
+  <div class="relative pl-0 md:pl-0">
+    <!-- Center Vertical Line (Desktop) / Left Line (Mobile) -->
+    <div class="absolute left-[28px] md:left-1/2 md:-ml-[1px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary via-primary to-primary/10 z-0"></div>
+
+    <div class="flex flex-col gap-12">
+      {EXPERIENCES.map((exp, index) => {
+        const isEven = index % 2 === 0;
+        return (
+          <div 
+            class={`relative z-10 w-full md:flex items-center justify-between group ${
+              isEven ? 'md:flex-row' : 'md:flex-row-reverse'
+            }`}
+          >
+            <!-- Date/Label Side -->
+            <div class={`
+              hidden md:block w-5/12 
+              ${isEven ? 'text-right pr-12' : 'text-left pl-12'}
+            `}>
+              <span class="text-primary font-bold text-xl block mb-1">{exp.yearRange}</span>
+              <p class="text-gray-400 text-sm font-medium uppercase tracking-wide">{exp.location}</p>
+            </div>
+
+            <!-- The Dot -->
+            <div class="absolute left-0 md:left-1/2 md:-ml-3 w-[56px] h-[56px] md:w-6 md:h-6 flex items-center justify-center">
+               <!-- Mobile Connection Line Fix -->
+               <div class="md:hidden absolute w-[20px] h-[2px] bg-primary left-full top-1/2 -mt-[1px]"></div>
+               
+               <div class={`
+                 w-4 h-4 rounded-full shadow-[0_0_15px_rgba(19,127,236,0.6)] ring-4 ring-background-dark
+                 ${index === 0 ? 'bg-primary' : 'bg-surface-dark border-2 border-primary'}
+               `}></div>
+            </div>
+
+            <!-- Content Card Side -->
+            <div class={`
+              ml-16 md:ml-0 md:w-5/12
+              ${isEven ? 'pl-0 md:pl-12' : 'pr-0 md:pr-12'}
+            `}>
+              <GlassCard hoverEffect={true} className="relative">
+                <!-- Mobile Date Header inside card -->
+                <div class="md:hidden mb-3 border-b border-white/5 pb-2">
+                   <span class="text-primary font-bold text-sm">{exp.yearRange}</span>
+                   <span class="text-gray-500 text-xs ml-2">| {exp.location}</span>
+                </div>
+
+                <div class="flex items-start justify-between mb-4">
+                  <div>
+                    <h4 class="text-xl font-bold text-white mb-1">{exp.role}</h4>
+                    <p class="text-gray-400 font-medium">{exp.company}</p>
+                  </div>
+                  <div class="bg-white rounded-lg p-1 shrink-0">
+                    <img src={exp.icon} alt={`${exp.company} logo`} class="w-12 h-12 object-contain" />
+                  </div>
+                </div>
+
+                <p class="text-gray-300 text-sm mb-6 leading-relaxed">
+                  {exp.description}
+                </p>
+
+                <div class="flex flex-wrap gap-2">
+                  {exp.techStack.map((tech) => (
+                    <span 
+                      class="px-3 py-1 bg-surface-dark/50 border border-white/10 rounded-full text-xs font-medium text-gray-300 hover:text-white hover:border-primary/50 transition-colors cursor-default"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </GlassCard>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Timeline from '../components/Timeline.astro';
+import Clients from '../components/Clients.astro';
+import Certifications from '../components/Certifications.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Nicolás Escobar">
+  <div class="flex flex-col min-h-screen">
+    <Navbar />
+    
+    <main class="flex-grow w-full max-w-7xl mx-auto px-6 flex flex-col gap-24">
+      <Hero />
+      <Timeline />
+      <Clients />
+      <Certifications />
+    </main>
+
+    <Footer />
+  </div>
+</Layout>

@@ -1,0 +1,54 @@
+---
+import { CERTIFICATIONS } from "../constants";
+import GlassCard from "./ui/GlassCard.astro";
+
+const adobeCerts = CERTIFICATIONS.filter((c) => c.issuer === "Adobe").sort((a, b) => a.id - b.id);
+---
+
+<section id="certifications" class="scroll-mt-32 pb-12">
+  <div class="flex items-center gap-4 mb-8">
+    <h3 class="text-2xl font-bold text-white">Accreditations</h3>
+    <div class="h-[1px] bg-white/10 flex-grow"></div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {adobeCerts.map((cert) => (
+      <GlassCard
+        className="relative overflow-hidden group border-primary/30 h-full flex flex-col"
+      >
+        <div class="absolute top-0 right-0 w-40 h-40 bg-primary/20 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-primary/30 transition-all duration-700"></div>
+
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="flex items-start justify-between mb-6">
+            <div class="size-16 rounded-xl bg-white flex items-center justify-center shadow-lg">
+              <img src="/adobe.svg" alt="Adobe Logo" class="w-10 h-10" />
+            </div>
+            <div class="flex items-center gap-2 px-3 py-1 bg-primary/20 rounded-full border border-primary/30 text-primary text-xs font-bold uppercase tracking-wide">
+              <span class="material-symbols-outlined text-base">verified</span>
+              <span>Verified</span>
+            </div>
+          </div>
+
+          <div class="mb-auto">
+            <h4 class="text-2xl font-bold text-white mb-2">{cert.title}</h4>
+            <p class="text-lg text-gray-300">{cert.subtitle}</p>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between">
+            <div class="text-sm text-gray-500 font-medium">
+              <p>Issued: {cert.date}</p>
+              <p>Expires: {cert.expiry}</p>
+            </div>
+            <a
+              href={`https://certification.adobe.com/credential/verify/${cert.credentialId}`}
+              class="text-white hover:text-primary font-bold text-sm transition-colors flex items-center gap-1 group/btn"
+            >
+              View Credential
+              <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1">arrow_outward</span>
+            </a>
+          </div>
+        </div>
+      </GlassCard>
+    ))}
+  </div>
+</section>
